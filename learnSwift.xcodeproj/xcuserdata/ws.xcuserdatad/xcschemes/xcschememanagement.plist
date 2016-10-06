@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>localVideo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>stopWatch.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -43,6 +48,11 @@
 			<true/>
 		</dict>
 		<key>54185C751DA6BBAC0099DFC1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>54185CA31DA6C57F0099DFC1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

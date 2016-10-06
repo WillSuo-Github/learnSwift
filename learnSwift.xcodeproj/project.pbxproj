@@ -21,6 +21,14 @@
 		54185C961DA6C0FD0099DFC1 /* MFJinHei_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54185C921DA6C0FD0099DFC1 /* MFJinHei_Noncommercial-Regular.ttf */; };
 		54185C971DA6C0FD0099DFC1 /* MFTongXin_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54185C931DA6C0FD0099DFC1 /* MFTongXin_Noncommercial-Regular.ttf */; };
 		54185C981DA6C0FD0099DFC1 /* MFZhiHei_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54185C941DA6C0FD0099DFC1 /* MFZhiHei_Noncommercial-Regular.ttf */; };
+		54185CA71DA6C5800099DFC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54185CA61DA6C5800099DFC1 /* AppDelegate.swift */; };
+		54185CA91DA6C5800099DFC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54185CA81DA6C5800099DFC1 /* ViewController.swift */; };
+		54185CAC1DA6C5800099DFC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54185CAA1DA6C5800099DFC1 /* Main.storyboard */; };
+		54185CAE1DA6C5800099DFC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54185CAD1DA6C5800099DFC1 /* Assets.xcassets */; };
+		54185CB11DA6C5800099DFC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54185CAF1DA6C5800099DFC1 /* LaunchScreen.storyboard */; };
+		54185CB81DA6C5940099DFC1 /* emoji zone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 54185CB71DA6C5940099DFC1 /* emoji zone.mp4 */; };
+		54185CBD1DA6CA590099DFC1 /* WSCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54185CBB1DA6CA590099DFC1 /* WSCell.swift */; };
+		54185CBE1DA6CA590099DFC1 /* WSCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54185CBC1DA6CA590099DFC1 /* WSCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +50,16 @@
 		54185C921DA6C0FD0099DFC1 /* MFJinHei_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFJinHei_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
 		54185C931DA6C0FD0099DFC1 /* MFTongXin_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFTongXin_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
 		54185C941DA6C0FD0099DFC1 /* MFZhiHei_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFZhiHei_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
+		54185CA41DA6C57F0099DFC1 /* localVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = localVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54185CA61DA6C5800099DFC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54185CA81DA6C5800099DFC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		54185CAB1DA6C5800099DFC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54185CAD1DA6C5800099DFC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54185CB01DA6C5800099DFC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54185CB21DA6C5800099DFC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54185CB71DA6C5940099DFC1 /* emoji zone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "emoji zone.mp4"; sourceTree = "<group>"; };
+		54185CBB1DA6CA590099DFC1 /* WSCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSCell.swift; sourceTree = "<group>"; };
+		54185CBC1DA6CA590099DFC1 /* WSCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +77,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54185CA11DA6C57F0099DFC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -67,6 +92,7 @@
 			children = (
 				54185C611DA6B8920099DFC1 /* stopWatch */,
 				54185C771DA6BBAC0099DFC1 /* customFont */,
+				54185CA51DA6C5800099DFC1 /* localVideo */,
 				54185C2C1DA6B43B0099DFC1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,6 +102,7 @@
 			children = (
 				54185C601DA6B8920099DFC1 /* stopWatch.app */,
 				54185C761DA6BBAC0099DFC1 /* customFont.app */,
+				54185CA41DA6C57F0099DFC1 /* localVideo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +145,30 @@
 			name = font;
 			sourceTree = "<group>";
 		};
+		54185CA51DA6C5800099DFC1 /* localVideo */ = {
+			isa = PBXGroup;
+			children = (
+				54185CB61DA6C5870099DFC1 /* video */,
+				54185CA61DA6C5800099DFC1 /* AppDelegate.swift */,
+				54185CA81DA6C5800099DFC1 /* ViewController.swift */,
+				54185CBB1DA6CA590099DFC1 /* WSCell.swift */,
+				54185CBC1DA6CA590099DFC1 /* WSCell.xib */,
+				54185CAA1DA6C5800099DFC1 /* Main.storyboard */,
+				54185CAD1DA6C5800099DFC1 /* Assets.xcassets */,
+				54185CAF1DA6C5800099DFC1 /* LaunchScreen.storyboard */,
+				54185CB21DA6C5800099DFC1 /* Info.plist */,
+			);
+			path = localVideo;
+			sourceTree = "<group>";
+		};
+		54185CB61DA6C5870099DFC1 /* video */ = {
+			isa = PBXGroup;
+			children = (
+				54185CB71DA6C5940099DFC1 /* emoji zone.mp4 */,
+			);
+			name = video;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -155,6 +206,23 @@
 			productReference = 54185C761DA6BBAC0099DFC1 /* customFont.app */;
 			productType = "com.apple.product-type.application";
 		};
+		54185CA31DA6C57F0099DFC1 /* localVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54185CB31DA6C5800099DFC1 /* Build configuration list for PBXNativeTarget "localVideo" */;
+			buildPhases = (
+				54185CA01DA6C57F0099DFC1 /* Sources */,
+				54185CA11DA6C57F0099DFC1 /* Frameworks */,
+				54185CA21DA6C57F0099DFC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = localVideo;
+			productName = localVideo;
+			productReference = 54185CA41DA6C57F0099DFC1 /* localVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -169,6 +237,9 @@
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					54185C751DA6BBAC0099DFC1 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					54185CA31DA6C57F0099DFC1 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -188,6 +259,7 @@
 			targets = (
 				54185C5F1DA6B8920099DFC1 /* stopWatch */,
 				54185C751DA6BBAC0099DFC1 /* customFont */,
+				54185CA31DA6C57F0099DFC1 /* localVideo */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +289,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54185CA21DA6C57F0099DFC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54185CB11DA6C5800099DFC1 /* LaunchScreen.storyboard in Resources */,
+				54185CB81DA6C5940099DFC1 /* emoji zone.mp4 in Resources */,
+				54185CAE1DA6C5800099DFC1 /* Assets.xcassets in Resources */,
+				54185CBE1DA6CA590099DFC1 /* WSCell.xib in Resources */,
+				54185CAC1DA6C5800099DFC1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -235,6 +319,16 @@
 			files = (
 				54185C7B1DA6BBAC0099DFC1 /* ViewController.swift in Sources */,
 				54185C791DA6BBAC0099DFC1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54185CA01DA6C57F0099DFC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54185CA91DA6C5800099DFC1 /* ViewController.swift in Sources */,
+				54185CBD1DA6CA590099DFC1 /* WSCell.swift in Sources */,
+				54185CA71DA6C5800099DFC1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +363,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				54185C821DA6BBAD0099DFC1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		54185CAA1DA6C5800099DFC1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54185CAB1DA6C5800099DFC1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		54185CAF1DA6C5800099DFC1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54185CB01DA6C5800099DFC1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -405,6 +515,28 @@
 			};
 			name = Release;
 		};
+		54185CB41DA6C5800099DFC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = localVideo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WS.localVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		54185CB51DA6C5800099DFC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = localVideo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WS.localVideo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -431,6 +563,14 @@
 			buildConfigurations = (
 				54185C851DA6BBAD0099DFC1 /* Debug */,
 				54185C861DA6BBAD0099DFC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		54185CB31DA6C5800099DFC1 /* Build configuration list for PBXNativeTarget "localVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54185CB41DA6C5800099DFC1 /* Debug */,
+				54185CB51DA6C5800099DFC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
