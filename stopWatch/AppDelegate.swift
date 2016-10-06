@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  learnSwift
+//  stopWatch
 //
 //  Created by ws on 2016/10/7.
 //  Copyright © 2016年 ws. All rights reserved.
