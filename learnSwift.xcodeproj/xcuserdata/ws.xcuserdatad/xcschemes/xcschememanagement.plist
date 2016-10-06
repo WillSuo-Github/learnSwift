@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>customFont.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>learnSwift.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -33,6 +38,11 @@
 			<true/>
 		</dict>
 		<key>54185C5F1DA6B8920099DFC1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>54185C751DA6BBAC0099DFC1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

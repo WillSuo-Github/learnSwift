@@ -12,6 +12,15 @@
 		54185C681DA6B8920099DFC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54185C661DA6B8920099DFC1 /* Main.storyboard */; };
 		54185C6A1DA6B8920099DFC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54185C691DA6B8920099DFC1 /* Assets.xcassets */; };
 		54185C6D1DA6B8920099DFC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54185C6B1DA6B8920099DFC1 /* LaunchScreen.storyboard */; };
+		54185C791DA6BBAC0099DFC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54185C781DA6BBAC0099DFC1 /* AppDelegate.swift */; };
+		54185C7B1DA6BBAC0099DFC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54185C7A1DA6BBAC0099DFC1 /* ViewController.swift */; };
+		54185C7E1DA6BBAC0099DFC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54185C7C1DA6BBAC0099DFC1 /* Main.storyboard */; };
+		54185C801DA6BBAD0099DFC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54185C7F1DA6BBAD0099DFC1 /* Assets.xcassets */; };
+		54185C831DA6BBAD0099DFC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54185C811DA6BBAD0099DFC1 /* LaunchScreen.storyboard */; };
+		54185C951DA6C0FD0099DFC1 /* Gaspar Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 54185C911DA6C0FD0099DFC1 /* Gaspar Regular.otf */; };
+		54185C961DA6C0FD0099DFC1 /* MFJinHei_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54185C921DA6C0FD0099DFC1 /* MFJinHei_Noncommercial-Regular.ttf */; };
+		54185C971DA6C0FD0099DFC1 /* MFTongXin_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54185C931DA6C0FD0099DFC1 /* MFTongXin_Noncommercial-Regular.ttf */; };
+		54185C981DA6C0FD0099DFC1 /* MFZhiHei_Noncommercial-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54185C941DA6C0FD0099DFC1 /* MFZhiHei_Noncommercial-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +31,28 @@
 		54185C691DA6B8920099DFC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54185C6C1DA6B8920099DFC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54185C6E1DA6B8930099DFC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54185C761DA6BBAC0099DFC1 /* customFont.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = customFont.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54185C781DA6BBAC0099DFC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54185C7A1DA6BBAC0099DFC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		54185C7D1DA6BBAC0099DFC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54185C7F1DA6BBAD0099DFC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54185C821DA6BBAD0099DFC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54185C841DA6BBAD0099DFC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54185C911DA6C0FD0099DFC1 /* Gaspar Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gaspar Regular.otf"; sourceTree = "<group>"; };
+		54185C921DA6C0FD0099DFC1 /* MFJinHei_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFJinHei_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
+		54185C931DA6C0FD0099DFC1 /* MFTongXin_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFTongXin_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
+		54185C941DA6C0FD0099DFC1 /* MFZhiHei_Noncommercial-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MFZhiHei_Noncommercial-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		54185C5D1DA6B8920099DFC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54185C731DA6BBAC0099DFC1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				54185C611DA6B8920099DFC1 /* stopWatch */,
+				54185C771DA6BBAC0099DFC1 /* customFont */,
 				54185C2C1DA6B43B0099DFC1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				54185C601DA6B8920099DFC1 /* stopWatch.app */,
+				54185C761DA6BBAC0099DFC1 /* customFont.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -62,6 +91,31 @@
 				54185C6E1DA6B8930099DFC1 /* Info.plist */,
 			);
 			path = stopWatch;
+			sourceTree = "<group>";
+		};
+		54185C771DA6BBAC0099DFC1 /* customFont */ = {
+			isa = PBXGroup;
+			children = (
+				54185C881DA6BBB40099DFC1 /* font */,
+				54185C781DA6BBAC0099DFC1 /* AppDelegate.swift */,
+				54185C7A1DA6BBAC0099DFC1 /* ViewController.swift */,
+				54185C7C1DA6BBAC0099DFC1 /* Main.storyboard */,
+				54185C7F1DA6BBAD0099DFC1 /* Assets.xcassets */,
+				54185C811DA6BBAD0099DFC1 /* LaunchScreen.storyboard */,
+				54185C841DA6BBAD0099DFC1 /* Info.plist */,
+			);
+			path = customFont;
+			sourceTree = "<group>";
+		};
+		54185C881DA6BBB40099DFC1 /* font */ = {
+			isa = PBXGroup;
+			children = (
+				54185C911DA6C0FD0099DFC1 /* Gaspar Regular.otf */,
+				54185C921DA6C0FD0099DFC1 /* MFJinHei_Noncommercial-Regular.ttf */,
+				54185C931DA6C0FD0099DFC1 /* MFTongXin_Noncommercial-Regular.ttf */,
+				54185C941DA6C0FD0099DFC1 /* MFZhiHei_Noncommercial-Regular.ttf */,
+			);
+			name = font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +138,23 @@
 			productReference = 54185C601DA6B8920099DFC1 /* stopWatch.app */;
 			productType = "com.apple.product-type.application";
 		};
+		54185C751DA6BBAC0099DFC1 /* customFont */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54185C871DA6BBAD0099DFC1 /* Build configuration list for PBXNativeTarget "customFont" */;
+			buildPhases = (
+				54185C721DA6BBAC0099DFC1 /* Sources */,
+				54185C731DA6BBAC0099DFC1 /* Frameworks */,
+				54185C741DA6BBAC0099DFC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = customFont;
+			productName = customFont;
+			productReference = 54185C761DA6BBAC0099DFC1 /* customFont.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +166,9 @@
 				ORGANIZATIONNAME = ws;
 				TargetAttributes = {
 					54185C5F1DA6B8920099DFC1 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					54185C751DA6BBAC0099DFC1 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -113,6 +187,7 @@
 			projectRoot = "";
 			targets = (
 				54185C5F1DA6B8920099DFC1 /* stopWatch */,
+				54185C751DA6BBAC0099DFC1 /* customFont */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +203,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54185C741DA6BBAC0099DFC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54185C831DA6BBAD0099DFC1 /* LaunchScreen.storyboard in Resources */,
+				54185C951DA6C0FD0099DFC1 /* Gaspar Regular.otf in Resources */,
+				54185C981DA6C0FD0099DFC1 /* MFZhiHei_Noncommercial-Regular.ttf in Resources */,
+				54185C961DA6C0FD0099DFC1 /* MFJinHei_Noncommercial-Regular.ttf in Resources */,
+				54185C801DA6BBAD0099DFC1 /* Assets.xcassets in Resources */,
+				54185C971DA6C0FD0099DFC1 /* MFTongXin_Noncommercial-Regular.ttf in Resources */,
+				54185C7E1DA6BBAC0099DFC1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -137,6 +226,15 @@
 			files = (
 				54185C651DA6B8920099DFC1 /* ViewController.swift in Sources */,
 				54185C631DA6B8920099DFC1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54185C721DA6BBAC0099DFC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54185C7B1DA6BBAC0099DFC1 /* ViewController.swift in Sources */,
+				54185C791DA6BBAC0099DFC1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +253,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				54185C6C1DA6B8920099DFC1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		54185C7C1DA6BBAC0099DFC1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54185C7D1DA6BBAC0099DFC1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		54185C811DA6BBAD0099DFC1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54185C821DA6BBAD0099DFC1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -269,6 +383,28 @@
 			};
 			name = Release;
 		};
+		54185C851DA6BBAD0099DFC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = customFont/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WS.customFont;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		54185C861DA6BBAD0099DFC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = customFont/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WS.customFont;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -286,6 +422,15 @@
 			buildConfigurations = (
 				54185C701DA6B8930099DFC1 /* Debug */,
 				54185C711DA6B8930099DFC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54185C871DA6BBAD0099DFC1 /* Build configuration list for PBXNativeTarget "customFont" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54185C851DA6BBAD0099DFC1 /* Debug */,
+				54185C861DA6BBAD0099DFC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

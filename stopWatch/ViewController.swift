@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+
     
     @IBOutlet weak var timeLabel: UILabel!
     var counter = 0.0
@@ -23,6 +24,7 @@ class ViewController: UIViewController {
 
     
     @IBAction func resetBtnChick(sender: AnyObject) {
+        
         Timer.invalidate()
         isPlaying = false
         counter = 0.0
