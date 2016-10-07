@@ -9,15 +9,15 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>learnSwift.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
 		<key>localVideo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
+		</dict>
+		<key>snapChat.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 		<key>stopWatch.xcscheme</key>
 		<dict>
@@ -27,6 +27,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>540A2ADA1DA77AA6009C446A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>54185C2A1DA6B43B0099DFC1</key>
 		<dict>
 			<key>primary</key>

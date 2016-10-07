@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "54185C2A1DA6B43B0099DFC1"
-               BuildableName = "learnSwift.app"
-               BlueprintName = "learnSwift"
+               BlueprintIdentifier = "540A2ADA1DA77AA6009C446A"
+               BuildableName = "snapChat.app"
+               BlueprintName = "snapChat"
                ReferencedContainer = "container:learnSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,33 +28,13 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "54185C3E1DA6B43B0099DFC1"
-               BuildableName = "learnSwiftTests.xctest"
-               BlueprintName = "learnSwiftTests"
-               ReferencedContainer = "container:learnSwift.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "54185C491DA6B43C0099DFC1"
-               BuildableName = "learnSwiftUITests.xctest"
-               BlueprintName = "learnSwiftUITests"
-               ReferencedContainer = "container:learnSwift.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "54185C2A1DA6B43B0099DFC1"
-            BuildableName = "learnSwift.app"
-            BlueprintName = "learnSwift"
+            BlueprintIdentifier = "540A2ADA1DA77AA6009C446A"
+            BuildableName = "snapChat.app"
+            BlueprintName = "snapChat"
             ReferencedContainer = "container:learnSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -75,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "54185C2A1DA6B43B0099DFC1"
-            BuildableName = "learnSwift.app"
-            BlueprintName = "learnSwift"
+            BlueprintIdentifier = "540A2ADA1DA77AA6009C446A"
+            BuildableName = "snapChat.app"
+            BlueprintName = "snapChat"
             ReferencedContainer = "container:learnSwift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -94,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "54185C2A1DA6B43B0099DFC1"
-            BuildableName = "learnSwift.app"
-            BlueprintName = "learnSwift"
+            BlueprintIdentifier = "540A2ADA1DA77AA6009C446A"
+            BuildableName = "snapChat.app"
+            BlueprintName = "snapChat"
             ReferencedContainer = "container:learnSwift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
