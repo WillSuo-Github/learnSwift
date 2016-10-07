@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WSCollectionViewCell" customModule="CarouselEffect" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="181" height="225"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="181" height="225"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="X7b-Js-s91">
+                        <rect key="frame" x="0.0" y="0.0" width="181" height="225"/>
+                    </imageView>
+                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="glg-WF-sQs">
+                        <rect key="frame" x="0.0" y="165" width="181" height="60"/>
+                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="avU-iM-dEA">
+                            <rect key="frame" x="0.0" y="0.0" width="181" height="60"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5R-nI-Qns">
+                                    <rect key="frame" x="8" y="19" width="165" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="F5R-nI-Qns" firstAttribute="centerY" secondItem="avU-iM-dEA" secondAttribute="centerY" id="btV-TB-iHp"/>
+                                <constraint firstAttribute="trailing" secondItem="F5R-nI-Qns" secondAttribute="trailing" constant="8" id="g9q-0D-gaf"/>
+                                <constraint firstItem="F5R-nI-Qns" firstAttribute="leading" secondItem="avU-iM-dEA" secondAttribute="leading" constant="8" id="iiL-SD-cse"/>
+                            </constraints>
+                        </view>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="Mgn-Xa-2Iv"/>
+                        </constraints>
+                        <blurEffect style="light"/>
+                    </visualEffectView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="glg-WF-sQs" secondAttribute="trailing" id="7Li-eQ-KMM"/>
+                <constraint firstItem="X7b-Js-s91" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="HeB-l2-McI"/>
+                <constraint firstItem="X7b-Js-s91" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KKQ-4R-yEx"/>
+                <constraint firstAttribute="bottom" secondItem="X7b-Js-s91" secondAttribute="bottom" id="QaR-47-ahg"/>
+                <constraint firstItem="glg-WF-sQs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YjD-Un-Iiy"/>
+                <constraint firstAttribute="trailing" secondItem="X7b-Js-s91" secondAttribute="trailing" id="tN9-8v-tPS"/>
+                <constraint firstAttribute="bottom" secondItem="glg-WF-sQs" secondAttribute="bottom" id="yto-f4-DcD"/>
+            </constraints>
+            <size key="customSize" width="181" height="225"/>
+            <connections>
+                <outlet property="imageView" destination="X7b-Js-s91" id="vv4-rh-p0r"/>
+                <outlet property="titleLabel" destination="F5R-nI-Qns" id="y6c-FB-WeK"/>
+            </connections>
+            <point key="canvasLocation" x="304.5" y="453.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

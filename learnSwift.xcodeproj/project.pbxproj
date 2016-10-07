@@ -15,6 +15,14 @@
 		540A2AEE1DA77B5B009C446A /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540A2AED1DA77B5B009C446A /* LeftViewController.swift */; };
 		540A2AF01DA77BE1009C446A /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540A2AEF1DA77BE1009C446A /* CenterViewController.swift */; };
 		540A2AF21DA77BE8009C446A /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540A2AF11DA77BE8009C446A /* RightViewController.swift */; };
+		540A2AFA1DA78F26009C446A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540A2AF91DA78F26009C446A /* AppDelegate.swift */; };
+		540A2AFF1DA78F26009C446A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540A2AFD1DA78F26009C446A /* Main.storyboard */; };
+		540A2B011DA78F26009C446A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 540A2B001DA78F26009C446A /* Assets.xcassets */; };
+		540A2B041DA78F26009C446A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540A2B021DA78F26009C446A /* LaunchScreen.storyboard */; };
+		540A2B0A1DA78F81009C446A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540A2B091DA78F81009C446A /* HomeViewController.swift */; };
+		540A2B0D1DA79672009C446A /* WSCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540A2B0B1DA79672009C446A /* WSCollectionViewCell.swift */; };
+		540A2B0E1DA79672009C446A /* WSCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 540A2B0C1DA79672009C446A /* WSCollectionViewCell.xib */; };
+		540A2B101DA796FE009C446A /* Interest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540A2B0F1DA796FE009C446A /* Interest.swift */; };
 		54185C631DA6B8920099DFC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54185C621DA6B8920099DFC1 /* AppDelegate.swift */; };
 		54185C651DA6B8920099DFC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54185C641DA6B8920099DFC1 /* ViewController.swift */; };
 		54185C681DA6B8920099DFC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54185C661DA6B8920099DFC1 /* Main.storyboard */; };
@@ -50,6 +58,16 @@
 		540A2AED1DA77B5B009C446A /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		540A2AEF1DA77BE1009C446A /* CenterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterViewController.swift; sourceTree = "<group>"; };
 		540A2AF11DA77BE8009C446A /* RightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
+		540A2AF71DA78F26009C446A /* CarouselEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarouselEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		540A2AF91DA78F26009C446A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		540A2AFE1DA78F26009C446A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		540A2B001DA78F26009C446A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		540A2B031DA78F26009C446A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		540A2B051DA78F26009C446A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		540A2B091DA78F81009C446A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		540A2B0B1DA79672009C446A /* WSCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSCollectionViewCell.swift; sourceTree = "<group>"; };
+		540A2B0C1DA79672009C446A /* WSCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSCollectionViewCell.xib; sourceTree = "<group>"; };
+		540A2B0F1DA796FE009C446A /* Interest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interest.swift; sourceTree = "<group>"; };
 		54185C601DA6B8920099DFC1 /* stopWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = stopWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54185C621DA6B8920099DFC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54185C641DA6B8920099DFC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +100,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		540A2AD81DA77AA6009C446A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540A2AF41DA78F26009C446A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,6 +153,22 @@
 			path = snapChat;
 			sourceTree = "<group>";
 		};
+		540A2AF81DA78F26009C446A /* CarouselEffect */ = {
+			isa = PBXGroup;
+			children = (
+				540A2AF91DA78F26009C446A /* AppDelegate.swift */,
+				540A2B091DA78F81009C446A /* HomeViewController.swift */,
+				540A2B0B1DA79672009C446A /* WSCollectionViewCell.swift */,
+				540A2B0C1DA79672009C446A /* WSCollectionViewCell.xib */,
+				540A2AFD1DA78F26009C446A /* Main.storyboard */,
+				540A2B001DA78F26009C446A /* Assets.xcassets */,
+				540A2B021DA78F26009C446A /* LaunchScreen.storyboard */,
+				540A2B051DA78F26009C446A /* Info.plist */,
+				540A2B0F1DA796FE009C446A /* Interest.swift */,
+			);
+			path = CarouselEffect;
+			sourceTree = "<group>";
+		};
 		54185C221DA6B43B0099DFC1 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +176,7 @@
 				54185C771DA6BBAC0099DFC1 /* customFont */,
 				54185CA51DA6C5800099DFC1 /* localVideo */,
 				540A2ADC1DA77AA6009C446A /* snapChat */,
+				540A2AF81DA78F26009C446A /* CarouselEffect */,
 				54185C2C1DA6B43B0099DFC1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -146,6 +188,7 @@
 				54185C761DA6BBAC0099DFC1 /* customFont.app */,
 				54185CA41DA6C57F0099DFC1 /* localVideo.app */,
 				540A2ADB1DA77AA6009C446A /* snapChat.app */,
+				540A2AF71DA78F26009C446A /* CarouselEffect.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -232,6 +275,23 @@
 			productReference = 540A2ADB1DA77AA6009C446A /* snapChat.app */;
 			productType = "com.apple.product-type.application";
 		};
+		540A2AF61DA78F26009C446A /* CarouselEffect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540A2B061DA78F26009C446A /* Build configuration list for PBXNativeTarget "CarouselEffect" */;
+			buildPhases = (
+				540A2AF31DA78F26009C446A /* Sources */,
+				540A2AF41DA78F26009C446A /* Frameworks */,
+				540A2AF51DA78F26009C446A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarouselEffect;
+			productName = CarouselEffect;
+			productReference = 540A2AF71DA78F26009C446A /* CarouselEffect.app */;
+			productType = "com.apple.product-type.application";
+		};
 		54185C5F1DA6B8920099DFC1 /* stopWatch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54185C6F1DA6B8930099DFC1 /* Build configuration list for PBXNativeTarget "stopWatch" */;
@@ -296,6 +356,9 @@
 					540A2ADA1DA77AA6009C446A = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
+					540A2AF61DA78F26009C446A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					54185C5F1DA6B8920099DFC1 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -324,6 +387,7 @@
 				54185C751DA6BBAC0099DFC1 /* customFont */,
 				54185CA31DA6C57F0099DFC1 /* localVideo */,
 				540A2ADA1DA77AA6009C446A /* snapChat */,
+				540A2AF61DA78F26009C446A /* CarouselEffect */,
 			);
 		};
 /* End PBXProject section */
@@ -336,6 +400,17 @@
 				540A2AE81DA77AA6009C446A /* LaunchScreen.storyboard in Resources */,
 				540A2AE51DA77AA6009C446A /* Assets.xcassets in Resources */,
 				540A2AE31DA77AA6009C446A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540A2AF51DA78F26009C446A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540A2B041DA78F26009C446A /* LaunchScreen.storyboard in Resources */,
+				540A2B011DA78F26009C446A /* Assets.xcassets in Resources */,
+				540A2B0E1DA79672009C446A /* WSCollectionViewCell.xib in Resources */,
+				540A2AFF1DA78F26009C446A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +465,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		540A2AF31DA78F26009C446A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540A2B0D1DA79672009C446A /* WSCollectionViewCell.swift in Sources */,
+				540A2AFA1DA78F26009C446A /* AppDelegate.swift in Sources */,
+				540A2B0A1DA78F81009C446A /* HomeViewController.swift in Sources */,
+				540A2B101DA796FE009C446A /* Interest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54185C5C1DA6B8920099DFC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -433,6 +519,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				540A2AE71DA77AA6009C446A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		540A2AFD1DA78F26009C446A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540A2AFE1DA78F26009C446A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		540A2B021DA78F26009C446A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540A2B031DA78F26009C446A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -506,6 +608,28 @@
 				INFOPLIST_FILE = snapChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WS.snapChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		540A2B071DA78F26009C446A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CarouselEffect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WS.CarouselEffect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		540A2B081DA78F26009C446A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CarouselEffect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = WS.CarouselEffect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -669,6 +793,14 @@
 			buildConfigurations = (
 				540A2AEA1DA77AA6009C446A /* Debug */,
 				540A2AEB1DA77AA6009C446A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		540A2B061DA78F26009C446A /* Build configuration list for PBXNativeTarget "CarouselEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540A2B071DA78F26009C446A /* Debug */,
+				540A2B081DA78F26009C446A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

@@ -17,7 +17,7 @@
                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jAl-Gb-Pdt">
                         <rect key="frame" x="0.0" y="0.0" width="388" height="179"/>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYa-Kj-4RR">
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYa-Kj-4RR">
                         <rect key="frame" x="164" y="60" width="60" height="60"/>
                         <state key="normal" image="playBtn"/>
                     </button>
