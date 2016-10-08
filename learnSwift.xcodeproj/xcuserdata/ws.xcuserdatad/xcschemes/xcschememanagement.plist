@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>RandomColorization.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>customFont.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -78,6 +83,11 @@
 			<true/>
 		</dict>
 		<key>54185CA31DA6C57F0099DFC1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>54E122321DA9223C00A62560</key>
 		<dict>
 			<key>primary</key>
 			<true/>
