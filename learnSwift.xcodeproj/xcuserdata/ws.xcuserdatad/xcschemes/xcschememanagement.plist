@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>ImageScrollEffect.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>RandomColorization.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -42,6 +47,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>54048F6C1DABA34300F3D4FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>540A2ADA1DA77AA6009C446A</key>
 		<dict>
 			<key>primary</key>

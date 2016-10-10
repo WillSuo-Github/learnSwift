@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54048F701DABA34300F3D4FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54048F6F1DABA34300F3D4FD /* AppDelegate.swift */; };
+		54048F721DABA34300F3D4FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54048F711DABA34300F3D4FD /* ViewController.swift */; };
+		54048F751DABA34300F3D4FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54048F731DABA34300F3D4FD /* Main.storyboard */; };
+		54048F771DABA34300F3D4FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54048F761DABA34300F3D4FD /* Assets.xcassets */; };
+		54048F7A1DABA34300F3D4FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54048F781DABA34300F3D4FD /* LaunchScreen.storyboard */; };
 		540A2ADE1DA77AA6009C446A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540A2ADD1DA77AA6009C446A /* AppDelegate.swift */; };
 		540A2AE01DA77AA6009C446A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540A2ADF1DA77AA6009C446A /* ViewController.swift */; };
 		540A2AE31DA77AA6009C446A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 540A2AE11DA77AA6009C446A /* Main.storyboard */; };
@@ -59,6 +64,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54048F6D1DABA34300F3D4FD /* ImageScrollEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageScrollEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54048F6F1DABA34300F3D4FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54048F711DABA34300F3D4FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		54048F741DABA34300F3D4FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54048F761DABA34300F3D4FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54048F791DABA34300F3D4FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		54048F7B1DABA34300F3D4FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		540A2ADB1DA77AA6009C446A /* snapChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = snapChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		540A2ADD1DA77AA6009C446A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		540A2ADF1DA77AA6009C446A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +137,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		54048F6A1DABA34300F3D4FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		540A2AD81DA77AA6009C446A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,6 +196,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54048F6E1DABA34300F3D4FD /* ImageScrollEffect */ = {
+			isa = PBXGroup;
+			children = (
+				54048F6F1DABA34300F3D4FD /* AppDelegate.swift */,
+				54048F711DABA34300F3D4FD /* ViewController.swift */,
+				54048F731DABA34300F3D4FD /* Main.storyboard */,
+				54048F761DABA34300F3D4FD /* Assets.xcassets */,
+				54048F781DABA34300F3D4FD /* LaunchScreen.storyboard */,
+				54048F7B1DABA34300F3D4FD /* Info.plist */,
+			);
+			path = ImageScrollEffect;
+			sourceTree = "<group>";
+		};
 		540A2ADC1DA77AA6009C446A /* snapChat */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +264,7 @@
 				540A2AF81DA78F26009C446A /* CarouselEffect */,
 				540A2B161DA7F62F009C446A /* pullToRefresh */,
 				54E122341DA9223C00A62560 /* RandomColorization */,
+				54048F6E1DABA34300F3D4FD /* ImageScrollEffect */,
 				54185C2C1DA6B43B0099DFC1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -246,6 +279,7 @@
 				540A2AF71DA78F26009C446A /* CarouselEffect.app */,
 				540A2B151DA7F62F009C446A /* pullToRefresh.app */,
 				54E122331DA9223C00A62560 /* RandomColorization.app */,
+				54048F6D1DABA34300F3D4FD /* ImageScrollEffect.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -329,6 +363,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		54048F6C1DABA34300F3D4FD /* ImageScrollEffect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54048F7E1DABA34300F3D4FD /* Build configuration list for PBXNativeTarget "ImageScrollEffect" */;
+			buildPhases = (
+				54048F691DABA34300F3D4FD /* Sources */,
+				54048F6A1DABA34300F3D4FD /* Frameworks */,
+				54048F6B1DABA34300F3D4FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageScrollEffect;
+			productName = ImageScrollEffect;
+			productReference = 54048F6D1DABA34300F3D4FD /* ImageScrollEffect.app */;
+			productType = "com.apple.product-type.application";
+		};
 		540A2ADA1DA77AA6009C446A /* snapChat */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 540A2AEC1DA77AA6009C446A /* Build configuration list for PBXNativeTarget "snapChat" */;
@@ -458,6 +509,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = ws;
 				TargetAttributes = {
+					54048F6C1DABA34300F3D4FD = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					540A2ADA1DA77AA6009C446A = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -501,11 +555,22 @@
 				540A2AF61DA78F26009C446A /* CarouselEffect */,
 				540A2B141DA7F62F009C446A /* pullToRefresh */,
 				54E122321DA9223C00A62560 /* RandomColorization */,
+				54048F6C1DABA34300F3D4FD /* ImageScrollEffect */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		54048F6B1DABA34300F3D4FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54048F7A1DABA34300F3D4FD /* LaunchScreen.storyboard in Resources */,
+				54048F771DABA34300F3D4FD /* Assets.xcassets in Resources */,
+				54048F751DABA34300F3D4FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		540A2AD91DA77AA6009C446A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -587,6 +652,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		54048F691DABA34300F3D4FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54048F721DABA34300F3D4FD /* ViewController.swift in Sources */,
+				54048F701DABA34300F3D4FD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		540A2AD71DA77AA6009C446A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -659,6 +733,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		54048F731DABA34300F3D4FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54048F741DABA34300F3D4FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		54048F781DABA34300F3D4FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54048F791DABA34300F3D4FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		540A2AE11DA77AA6009C446A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -774,6 +864,28 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		54048F7C1DABA34300F3D4FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ImageScrollEffect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ws.ImageScrollEffect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		54048F7D1DABA34300F3D4FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ImageScrollEffect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ws.ImageScrollEffect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		540A2AEA1DA77AA6009C446A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1016,6 +1128,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		54048F7E1DABA34300F3D4FD /* Build configuration list for PBXNativeTarget "ImageScrollEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54048F7C1DABA34300F3D4FD /* Debug */,
+				54048F7D1DABA34300F3D4FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		540A2AEC1DA77AA6009C446A /* Build configuration list for PBXNativeTarget "snapChat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1086,6 +1206,7 @@
 				54E122431DA9223C00A62560 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
