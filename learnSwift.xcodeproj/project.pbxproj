@@ -55,6 +55,13 @@
 		54185CB81DA6C5940099DFC1 /* emoji zone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 54185CB71DA6C5940099DFC1 /* emoji zone.mp4 */; };
 		54185CBD1DA6CA590099DFC1 /* WSCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54185CBB1DA6CA590099DFC1 /* WSCell.swift */; };
 		54185CBE1DA6CA590099DFC1 /* WSCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54185CBC1DA6CA590099DFC1 /* WSCell.xib */; };
+		545522911DACB44F00E63CF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545522901DACB44F00E63CF2 /* AppDelegate.swift */; };
+		545522931DACB44F00E63CF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545522921DACB44F00E63CF2 /* ViewController.swift */; };
+		545522961DACB44F00E63CF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545522941DACB44F00E63CF2 /* Main.storyboard */; };
+		545522981DACB44F00E63CF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545522971DACB44F00E63CF2 /* Assets.xcassets */; };
+		5455229B1DACB44F00E63CF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545522991DACB44F00E63CF2 /* LaunchScreen.storyboard */; };
+		545522A11DACB47900E63CF2 /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545522A01DACB47900E63CF2 /* VideoSplashViewController.swift */; };
+		545522A31DACB8F000E63CF2 /* moments.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 545522A21DACB8F000E63CF2 /* moments.mp4 */; };
 		54E122361DA9223C00A62560 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E122351DA9223C00A62560 /* AppDelegate.swift */; };
 		54E122381DA9223C00A62560 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E122371DA9223C00A62560 /* ViewController.swift */; };
 		54E1223B1DA9223C00A62560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E122391DA9223C00A62560 /* Main.storyboard */; };
@@ -126,6 +133,15 @@
 		54185CB71DA6C5940099DFC1 /* emoji zone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "emoji zone.mp4"; sourceTree = "<group>"; };
 		54185CBB1DA6CA590099DFC1 /* WSCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSCell.swift; sourceTree = "<group>"; };
 		54185CBC1DA6CA590099DFC1 /* WSCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSCell.xib; sourceTree = "<group>"; };
+		5455228E1DACB44F00E63CF2 /* VedioBackground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VedioBackground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		545522901DACB44F00E63CF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		545522921DACB44F00E63CF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		545522951DACB44F00E63CF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		545522971DACB44F00E63CF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5455229A1DACB44F00E63CF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5455229C1DACB44F00E63CF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		545522A01DACB47900E63CF2 /* VideoSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSplashViewController.swift; sourceTree = "<group>"; };
+		545522A21DACB8F000E63CF2 /* moments.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = moments.mp4; sourceTree = "<group>"; };
 		54E122331DA9223C00A62560 /* RandomColorization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColorization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E122351DA9223C00A62560 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54E122371DA9223C00A62560 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +196,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		54185CA11DA6C57F0099DFC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5455228B1DACB44F00E63CF2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -265,6 +288,7 @@
 				540A2B161DA7F62F009C446A /* pullToRefresh */,
 				54E122341DA9223C00A62560 /* RandomColorization */,
 				54048F6E1DABA34300F3D4FD /* ImageScrollEffect */,
+				5455228F1DACB44F00E63CF2 /* VedioBackground */,
 				54185C2C1DA6B43B0099DFC1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -280,6 +304,7 @@
 				540A2B151DA7F62F009C446A /* pullToRefresh.app */,
 				54E122331DA9223C00A62560 /* RandomColorization.app */,
 				54048F6D1DABA34300F3D4FD /* ImageScrollEffect.app */,
+				5455228E1DACB44F00E63CF2 /* VedioBackground.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -344,6 +369,21 @@
 				54185CB71DA6C5940099DFC1 /* emoji zone.mp4 */,
 			);
 			name = video;
+			sourceTree = "<group>";
+		};
+		5455228F1DACB44F00E63CF2 /* VedioBackground */ = {
+			isa = PBXGroup;
+			children = (
+				545522A21DACB8F000E63CF2 /* moments.mp4 */,
+				545522901DACB44F00E63CF2 /* AppDelegate.swift */,
+				545522921DACB44F00E63CF2 /* ViewController.swift */,
+				545522941DACB44F00E63CF2 /* Main.storyboard */,
+				545522971DACB44F00E63CF2 /* Assets.xcassets */,
+				545522991DACB44F00E63CF2 /* LaunchScreen.storyboard */,
+				5455229C1DACB44F00E63CF2 /* Info.plist */,
+				545522A01DACB47900E63CF2 /* VideoSplashViewController.swift */,
+			);
+			path = VedioBackground;
 			sourceTree = "<group>";
 		};
 		54E122341DA9223C00A62560 /* RandomColorization */ = {
@@ -482,6 +522,23 @@
 			productReference = 54185CA41DA6C57F0099DFC1 /* localVideo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5455228D1DACB44F00E63CF2 /* VedioBackground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5455229F1DACB44F00E63CF2 /* Build configuration list for PBXNativeTarget "VedioBackground" */;
+			buildPhases = (
+				5455228A1DACB44F00E63CF2 /* Sources */,
+				5455228B1DACB44F00E63CF2 /* Frameworks */,
+				5455228C1DACB44F00E63CF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VedioBackground;
+			productName = VedioBackground;
+			productReference = 5455228E1DACB44F00E63CF2 /* VedioBackground.app */;
+			productType = "com.apple.product-type.application";
+		};
 		54E122321DA9223C00A62560 /* RandomColorization */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54E122441DA9223C00A62560 /* Build configuration list for PBXNativeTarget "RandomColorization" */;
@@ -530,6 +587,9 @@
 					54185CA31DA6C57F0099DFC1 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
+					5455228D1DACB44F00E63CF2 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					54E122321DA9223C00A62560 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -556,6 +616,7 @@
 				540A2B141DA7F62F009C446A /* pullToRefresh */,
 				54E122321DA9223C00A62560 /* RandomColorization */,
 				54048F6C1DABA34300F3D4FD /* ImageScrollEffect */,
+				5455228D1DACB44F00E63CF2 /* VedioBackground */,
 			);
 		};
 /* End PBXProject section */
@@ -635,6 +696,17 @@
 				54185CAE1DA6C5800099DFC1 /* Assets.xcassets in Resources */,
 				54185CBE1DA6CA590099DFC1 /* WSCell.xib in Resources */,
 				54185CAC1DA6C5800099DFC1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5455228C1DACB44F00E63CF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5455229B1DACB44F00E63CF2 /* LaunchScreen.storyboard in Resources */,
+				545522A31DACB8F000E63CF2 /* moments.mp4 in Resources */,
+				545522981DACB44F00E63CF2 /* Assets.xcassets in Resources */,
+				545522961DACB44F00E63CF2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,6 +790,16 @@
 				54185CA91DA6C5800099DFC1 /* ViewController.swift in Sources */,
 				54185CBD1DA6CA590099DFC1 /* WSCell.swift in Sources */,
 				54185CA71DA6C5800099DFC1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5455228A1DACB44F00E63CF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545522931DACB44F00E63CF2 /* ViewController.swift in Sources */,
+				545522911DACB44F00E63CF2 /* AppDelegate.swift in Sources */,
+				545522A11DACB47900E63CF2 /* VideoSplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -841,6 +923,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				54185CB01DA6C5800099DFC1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		545522941DACB44F00E63CF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				545522951DACB44F00E63CF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		545522991DACB44F00E63CF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5455229A1DACB44F00E63CF2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1103,6 +1201,28 @@
 			};
 			name = Release;
 		};
+		5455229D1DACB44F00E63CF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VedioBackground/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ws.VedioBackground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5455229E1DACB44F00E63CF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VedioBackground/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ws.VedioBackground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		54E122421DA9223C00A62560 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1135,6 +1255,7 @@
 				54048F7D1DABA34300F3D4FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		540A2AEC1DA77AA6009C446A /* Build configuration list for PBXNativeTarget "snapChat" */ = {
 			isa = XCConfigurationList;
@@ -1198,6 +1319,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		5455229F1DACB44F00E63CF2 /* Build configuration list for PBXNativeTarget "VedioBackground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5455229D1DACB44F00E63CF2 /* Debug */,
+				5455229E1DACB44F00E63CF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		54E122441DA9223C00A62560 /* Build configuration list for PBXNativeTarget "RandomColorization" */ = {
 			isa = XCConfigurationList;
