@@ -24,6 +24,11 @@
 			<key>orderHint</key>
 			<integer>8</integer>
 		</dict>
+		<key>clearTableViewCell.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
 		<key>customFont.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -108,6 +113,11 @@
 			<true/>
 		</dict>
 		<key>54E122321DA9223C00A62560</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>54E5E8F71DACC40C00A34B36</key>
 		<dict>
 			<key>primary</key>
 			<true/>
