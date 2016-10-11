@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         view.addSubview(scrollView)
         
+        @IBOutlet weak var btnChick: UIButton!
         let leftVc = LeftViewController()
         let centerVc = CenterViewController()
         let rightVc = RightViewController()
