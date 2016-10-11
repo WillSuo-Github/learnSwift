@@ -59,6 +59,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>tableViewAnimation.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -128,6 +133,11 @@
 			<true/>
 		</dict>
 		<key>54E5E90D1DACCA9700A34B36</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>54E5E9291DACD45D00A34B36</key>
 		<dict>
 			<key>primary</key>
 			<true/>
