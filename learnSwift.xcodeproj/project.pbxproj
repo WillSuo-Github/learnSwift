@@ -55,6 +55,11 @@
 		54185CB81DA6C5940099DFC1 /* emoji zone.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 54185CB71DA6C5940099DFC1 /* emoji zone.mp4 */; };
 		54185CBD1DA6CA590099DFC1 /* WSCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54185CBB1DA6CA590099DFC1 /* WSCell.swift */; };
 		54185CBE1DA6CA590099DFC1 /* WSCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54185CBC1DA6CA590099DFC1 /* WSCell.xib */; };
+		543B83B71DAE305800496DE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B83B61DAE305800496DE8 /* AppDelegate.swift */; };
+		543B83B91DAE305800496DE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543B83B81DAE305800496DE8 /* ViewController.swift */; };
+		543B83BC1DAE305800496DE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 543B83BA1DAE305800496DE8 /* Main.storyboard */; };
+		543B83BE1DAE305800496DE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543B83BD1DAE305800496DE8 /* Assets.xcassets */; };
+		543B83C11DAE305800496DE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 543B83BF1DAE305800496DE8 /* LaunchScreen.storyboard */; };
 		545522911DACB44F00E63CF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545522901DACB44F00E63CF2 /* AppDelegate.swift */; };
 		545522931DACB44F00E63CF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545522921DACB44F00E63CF2 /* ViewController.swift */; };
 		545522961DACB44F00E63CF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545522941DACB44F00E63CF2 /* Main.storyboard */; };
@@ -62,6 +67,15 @@
 		5455229B1DACB44F00E63CF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545522991DACB44F00E63CF2 /* LaunchScreen.storyboard */; };
 		545522A11DACB47900E63CF2 /* VideoSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545522A01DACB47900E63CF2 /* VideoSplashViewController.swift */; };
 		545522A31DACB8F000E63CF2 /* moments.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 545522A21DACB8F000E63CF2 /* moments.mp4 */; };
+		545E62D61DADDB66007439D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E62D51DADDB66007439D7 /* AppDelegate.swift */; };
+		545E62D81DADDB67007439D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E62D71DADDB67007439D7 /* ViewController.swift */; };
+		545E62DB1DADDB67007439D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545E62D91DADDB67007439D7 /* Main.storyboard */; };
+		545E62DD1DADDB67007439D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545E62DC1DADDB67007439D7 /* Assets.xcassets */; };
+		545E62E01DADDB67007439D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 545E62DE1DADDB67007439D7 /* LaunchScreen.storyboard */; };
+		545E62E61DADDD92007439D7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E62E51DADDD92007439D7 /* TableViewController.swift */; };
+		545E62E81DADDF56007439D7 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E62E71DADDF56007439D7 /* MenuTableViewController.swift */; };
+		545E62EA1DADE09D007439D7 /* MenuTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E62E91DADE09D007439D7 /* MenuTransitionManager.swift */; };
+		545E62EB1DADE3A1007439D7 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E62E51DADDD92007439D7 /* TableViewController.swift */; };
 		54E122361DA9223C00A62560 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E122351DA9223C00A62560 /* AppDelegate.swift */; };
 		54E122381DA9223C00A62560 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E122371DA9223C00A62560 /* ViewController.swift */; };
 		54E1223B1DA9223C00A62560 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54E122391DA9223C00A62560 /* Main.storyboard */; };
@@ -156,6 +170,13 @@
 		54185CB71DA6C5940099DFC1 /* emoji zone.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "emoji zone.mp4"; sourceTree = "<group>"; };
 		54185CBB1DA6CA590099DFC1 /* WSCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WSCell.swift; sourceTree = "<group>"; };
 		54185CBC1DA6CA590099DFC1 /* WSCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSCell.xib; sourceTree = "<group>"; };
+		543B83B41DAE305800496DE8 /* KeyBoardLayoutShow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyBoardLayoutShow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		543B83B61DAE305800496DE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		543B83B81DAE305800496DE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		543B83BB1DAE305800496DE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		543B83BD1DAE305800496DE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		543B83C01DAE305800496DE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		543B83C21DAE305800496DE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5455228E1DACB44F00E63CF2 /* VedioBackground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VedioBackground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545522901DACB44F00E63CF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		545522921DACB44F00E63CF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -165,6 +186,16 @@
 		5455229C1DACB44F00E63CF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		545522A01DACB47900E63CF2 /* VideoSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoSplashViewController.swift; sourceTree = "<group>"; };
 		545522A21DACB8F000E63CF2 /* moments.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = moments.mp4; sourceTree = "<group>"; };
+		545E62D31DADDB66007439D7 /* SlideMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		545E62D51DADDB66007439D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		545E62D71DADDB67007439D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		545E62DA1DADDB67007439D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		545E62DC1DADDB67007439D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		545E62DF1DADDB67007439D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		545E62E11DADDB67007439D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		545E62E51DADDD92007439D7 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		545E62E71DADDF56007439D7 /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		545E62E91DADE09D007439D7 /* MenuTransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTransitionManager.swift; sourceTree = "<group>"; };
 		54E122331DA9223C00A62560 /* RandomColorization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColorization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E122351DA9223C00A62560 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54E122371DA9223C00A62560 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -256,7 +287,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		543B83B11DAE305800496DE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5455228B1DACB44F00E63CF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		545E62D01DADDB66007439D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -375,6 +420,8 @@
 				54E5E90F1DACCA9700A34B36 /* LoginAnimation */,
 				54E5E92B1DACD45D00A34B36 /* tableViewAnimation */,
 				54E5E9431DACE83F00A34B36 /* splashAnimated */,
+				545E62D41DADDB66007439D7 /* SlideMenu */,
+				543B83B51DAE305800496DE8 /* KeyBoardLayoutShow */,
 				54185C2C1DA6B43B0099DFC1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -395,6 +442,8 @@
 				54E5E90E1DACCA9700A34B36 /* LoginAnimation.app */,
 				54E5E92A1DACD45D00A34B36 /* tableViewAnimation.app */,
 				54E5E9421DACE83F00A34B36 /* splashAnimated.app */,
+				545E62D31DADDB66007439D7 /* SlideMenu.app */,
+				543B83B41DAE305800496DE8 /* KeyBoardLayoutShow.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -461,6 +510,19 @@
 			name = video;
 			sourceTree = "<group>";
 		};
+		543B83B51DAE305800496DE8 /* KeyBoardLayoutShow */ = {
+			isa = PBXGroup;
+			children = (
+				543B83B61DAE305800496DE8 /* AppDelegate.swift */,
+				543B83B81DAE305800496DE8 /* ViewController.swift */,
+				543B83BA1DAE305800496DE8 /* Main.storyboard */,
+				543B83BD1DAE305800496DE8 /* Assets.xcassets */,
+				543B83BF1DAE305800496DE8 /* LaunchScreen.storyboard */,
+				543B83C21DAE305800496DE8 /* Info.plist */,
+			);
+			path = KeyBoardLayoutShow;
+			sourceTree = "<group>";
+		};
 		5455228F1DACB44F00E63CF2 /* VedioBackground */ = {
 			isa = PBXGroup;
 			children = (
@@ -474,6 +536,22 @@
 				545522A01DACB47900E63CF2 /* VideoSplashViewController.swift */,
 			);
 			path = VedioBackground;
+			sourceTree = "<group>";
+		};
+		545E62D41DADDB66007439D7 /* SlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				545E62D51DADDB66007439D7 /* AppDelegate.swift */,
+				545E62D71DADDB67007439D7 /* ViewController.swift */,
+				545E62D91DADDB67007439D7 /* Main.storyboard */,
+				545E62DC1DADDB67007439D7 /* Assets.xcassets */,
+				545E62DE1DADDB67007439D7 /* LaunchScreen.storyboard */,
+				545E62E11DADDB67007439D7 /* Info.plist */,
+				545E62E51DADDD92007439D7 /* TableViewController.swift */,
+				545E62E71DADDF56007439D7 /* MenuTableViewController.swift */,
+				545E62E91DADE09D007439D7 /* MenuTransitionManager.swift */,
+			);
+			path = SlideMenu;
 			sourceTree = "<group>";
 		};
 		54E122341DA9223C00A62560 /* RandomColorization */ = {
@@ -667,6 +745,23 @@
 			productReference = 54185CA41DA6C57F0099DFC1 /* localVideo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		543B83B31DAE305800496DE8 /* KeyBoardLayoutShow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 543B83C51DAE305800496DE8 /* Build configuration list for PBXNativeTarget "KeyBoardLayoutShow" */;
+			buildPhases = (
+				543B83B01DAE305800496DE8 /* Sources */,
+				543B83B11DAE305800496DE8 /* Frameworks */,
+				543B83B21DAE305800496DE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyBoardLayoutShow;
+			productName = KeyBoardLayoutShow;
+			productReference = 543B83B41DAE305800496DE8 /* KeyBoardLayoutShow.app */;
+			productType = "com.apple.product-type.application";
+		};
 		5455228D1DACB44F00E63CF2 /* VedioBackground */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5455229F1DACB44F00E63CF2 /* Build configuration list for PBXNativeTarget "VedioBackground" */;
@@ -682,6 +777,23 @@
 			name = VedioBackground;
 			productName = VedioBackground;
 			productReference = 5455228E1DACB44F00E63CF2 /* VedioBackground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		545E62D21DADDB66007439D7 /* SlideMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 545E62E41DADDB67007439D7 /* Build configuration list for PBXNativeTarget "SlideMenu" */;
+			buildPhases = (
+				545E62CF1DADDB66007439D7 /* Sources */,
+				545E62D01DADDB66007439D7 /* Frameworks */,
+				545E62D11DADDB66007439D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlideMenu;
+			productName = SlideMenu;
+			productReference = 545E62D31DADDB66007439D7 /* SlideMenu.app */;
 			productType = "com.apple.product-type.application";
 		};
 		54E122321DA9223C00A62560 /* RandomColorization */ = {
@@ -800,7 +912,13 @@
 					54185CA31DA6C57F0099DFC1 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
+					543B83B31DAE305800496DE8 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					5455228D1DACB44F00E63CF2 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					545E62D21DADDB66007439D7 = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					54E122321DA9223C00A62560 = {
@@ -846,6 +964,8 @@
 				54E5E90D1DACCA9700A34B36 /* LoginAnimation */,
 				54E5E9291DACD45D00A34B36 /* tableViewAnimation */,
 				54E5E9411DACE83F00A34B36 /* splashAnimated */,
+				545E62D21DADDB66007439D7 /* SlideMenu */,
+				543B83B31DAE305800496DE8 /* KeyBoardLayoutShow */,
 			);
 		};
 /* End PBXProject section */
@@ -928,6 +1048,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		543B83B21DAE305800496DE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543B83C11DAE305800496DE8 /* LaunchScreen.storyboard in Resources */,
+				543B83BE1DAE305800496DE8 /* Assets.xcassets in Resources */,
+				543B83BC1DAE305800496DE8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5455228C1DACB44F00E63CF2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -936,6 +1066,16 @@
 				545522A31DACB8F000E63CF2 /* moments.mp4 in Resources */,
 				545522981DACB44F00E63CF2 /* Assets.xcassets in Resources */,
 				545522961DACB44F00E63CF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		545E62D11DADDB66007439D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545E62E01DADDB67007439D7 /* LaunchScreen.storyboard in Resources */,
+				545E62DD1DADDB67007439D7 /* Assets.xcassets in Resources */,
+				545E62DB1DADDB67007439D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1063,6 +1203,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		543B83B01DAE305800496DE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543B83B91DAE305800496DE8 /* ViewController.swift in Sources */,
+				543B83B71DAE305800496DE8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5455228A1DACB44F00E63CF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1070,6 +1219,19 @@
 				545522931DACB44F00E63CF2 /* ViewController.swift in Sources */,
 				545522911DACB44F00E63CF2 /* AppDelegate.swift in Sources */,
 				545522A11DACB47900E63CF2 /* VideoSplashViewController.swift in Sources */,
+				545E62EB1DADE3A1007439D7 /* TableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		545E62CF1DADDB66007439D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				545E62E81DADDF56007439D7 /* MenuTableViewController.swift in Sources */,
+				545E62D81DADDB67007439D7 /* ViewController.swift in Sources */,
+				545E62EA1DADE09D007439D7 /* MenuTransitionManager.swift in Sources */,
+				545E62E61DADDD92007439D7 /* TableViewController.swift in Sources */,
+				545E62D61DADDB66007439D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1235,6 +1397,22 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		543B83BA1DAE305800496DE8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				543B83BB1DAE305800496DE8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		543B83BF1DAE305800496DE8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				543B83C01DAE305800496DE8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		545522941DACB44F00E63CF2 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1247,6 +1425,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				5455229A1DACB44F00E63CF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		545E62D91DADDB67007439D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				545E62DA1DADDB67007439D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		545E62DE1DADDB67007439D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				545E62DF1DADDB67007439D7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1573,6 +1767,28 @@
 			};
 			name = Release;
 		};
+		543B83C31DAE305800496DE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KeyBoardLayoutShow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ws.KeyBoardLayoutShow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		543B83C41DAE305800496DE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = KeyBoardLayoutShow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ws.KeyBoardLayoutShow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		5455229D1DACB44F00E63CF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1591,6 +1807,28 @@
 				INFOPLIST_FILE = VedioBackground/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ws.VedioBackground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		545E62E21DADDB67007439D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SlideMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ws.SlideMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		545E62E31DADDB67007439D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SlideMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ws.SlideMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1780,11 +2018,28 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		543B83C51DAE305800496DE8 /* Build configuration list for PBXNativeTarget "KeyBoardLayoutShow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543B83C31DAE305800496DE8 /* Debug */,
+				543B83C41DAE305800496DE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5455229F1DACB44F00E63CF2 /* Build configuration list for PBXNativeTarget "VedioBackground" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5455229D1DACB44F00E63CF2 /* Debug */,
 				5455229E1DACB44F00E63CF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		545E62E41DADDB67007439D7 /* Build configuration list for PBXNativeTarget "SlideMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				545E62E21DADDB67007439D7 /* Debug */,
+				545E62E31DADDB67007439D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1805,6 +2060,7 @@
 				54E5E9081DACC40C00A34B36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54E5E91D1DACCA9700A34B36 /* Build configuration list for PBXNativeTarget "LoginAnimation" */ = {
 			isa = XCConfigurationList;
@@ -1813,6 +2069,7 @@
 				54E5E91F1DACCA9700A34B36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54E5E9391DACD45D00A34B36 /* Build configuration list for PBXNativeTarget "tableViewAnimation" */ = {
 			isa = XCConfigurationList;
@@ -1821,6 +2078,7 @@
 				54E5E93B1DACD45D00A34B36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54E5E9511DACE83F00A34B36 /* Build configuration list for PBXNativeTarget "splashAnimated" */ = {
 			isa = XCConfigurationList;
@@ -1829,6 +2087,7 @@
 				54E5E9531DACE83F00A34B36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

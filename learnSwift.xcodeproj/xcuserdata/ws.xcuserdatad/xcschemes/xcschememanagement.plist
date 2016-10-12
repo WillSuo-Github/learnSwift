@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>7</integer>
 		</dict>
+		<key>KeyBoardLayoutShow.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
 		<key>LoginAnimation.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>6</integer>
+		</dict>
+		<key>SlideMenu.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
 		</dict>
 		<key>VedioBackground.xcscheme</key>
 		<dict>
@@ -122,7 +132,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>543B83B31DAE305800496DE8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5455228D1DACB44F00E63CF2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>545E62D21DADDB66007439D7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
