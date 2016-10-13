@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>CustomRefresh.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
 		<key>ImageScrollEffect.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -133,6 +138,11 @@
 			<true/>
 		</dict>
 		<key>543B83B31DAE305800496DE8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>543B83C91DAF2BB900496DE8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
