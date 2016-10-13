@@ -49,6 +49,11 @@
 			<key>orderHint</key>
 			<integer>9</integer>
 		</dict>
+		<key>collectionViewAnimation.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
 		<key>customFont.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -153,6 +158,11 @@
 			<true/>
 		</dict>
 		<key>545E62D21DADDB66007439D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>549664B01DAF6E57005F4967</key>
 		<dict>
 			<key>primary</key>
 			<true/>
