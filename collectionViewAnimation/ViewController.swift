@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var myCollectionView: UICollectionView?
     var imageCollection: AnimationImageCollection?
     var currentIndex: NSIndexPath?
+    var pushVc: WSViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,9 +37,10 @@ class ViewController: UIViewController {
     }
     
     private func handlerCollectionDidSelectCell(collection: UICollectionView, cell: UICollectionViewCell) {
-        let vc = WSViewController()
-        navigationController?.delegate = self
-        navigationController?.pushViewController(vc, animated: true)
+        pushVc = WSViewController()
+        pushVc!.viewModel = self.imageCollection?.images[(currentIndex?.row)!]
+        navigationController?.delegate = pushVc
+        navigationController?.pushViewController(pushVc!, animated: true)
         
     }
 
@@ -68,8 +70,16 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         handlerCollectionDidSelectCell(collectionView, cell: cell)
     }
 }
-
-extension ViewController: UINavigationControllerDelegate {
-    
-}
+//
+//extension ViewController: UINavigationControllerDelegate {
+//    
+//    func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+//        print(operation)
+//        if operation == .Push{
+//            return CustomAnimation(type: .push)
+//        }else{
+//            return CustomAnimation(type: .pop)
+//        }
+//    }
+//}
 

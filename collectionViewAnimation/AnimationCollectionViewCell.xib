@@ -13,18 +13,11 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="340" height="207"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6cE-Wy-HUe">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6cE-Wy-HUe">
                         <rect key="frame" x="0.0" y="0.0" width="340" height="140"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="340" id="0o7-xn-JEG"/>
                             <constraint firstAttribute="height" constant="140" id="dfu-rY-VrS"/>
-                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="140" id="hhv-qB-bGC"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="0o7-xn-JEG"/>
-                            </mask>
-                        </variation>
                     </imageView>
                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JK7-j7-btw">
                         <rect key="frame" x="10" y="12" width="20" height="24"/>

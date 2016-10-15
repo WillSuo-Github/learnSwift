@@ -8,29 +8,50 @@
 
 import UIKit
 
-class WSViewController: UIViewController {
+class WSViewController: UIViewController, UINavigationControllerDelegate {
 
-    
+    var viewModel: AnimationCellModel!
     var imageView = UIImageView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         view.backgroundColor = .whiteColor()
-        imageView = UIImageView(image: UIImage(named: "1"))
+        imageView = UIImageView(image: UIImage(named: viewModel.imagePath))
+        imageView.frame = CGRect(x: 0, y: 64, width: view.bounds.size.width, height: 300)
+        imageView.contentMode = .ScaleToFill
         view.addSubview(imageView)
-        imageView.frame = CGRect(x: 0, y: 0, width: view.bounds.size.width, height: 300)
-        let textView = UITextView(frame: CGRect(x: 0, y: 300, width: view.bounds.size.width, height: view.bounds.size.height - 300))
+        
+        
+        let textView = UITextView(frame: CGRect(x: 0, y: 364, width: view.bounds.size.width, height: view.bounds.size.height - 300))
         view.addSubview(textView)
         textView.text = "123123123askjdfl;akjdsl;fjkal;djsfl;ajkdl;fjal;kdjfl;ajdlfjal;kd"
-        navigationController?.delegate = self
+//        self.navigationController?.delegate = self
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "huiqu", style: .Plain, target: self, action: #selector(WSViewController.popActivity))
     }
-
-}
-
-extension WSViewController: UINavigationControllerDelegate {
     
-    func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return operation == .Push ? CustomAnimation(type: .push) : nil
+    func popActivity() {
+        navigationController?.popViewControllerAnimated(true)
     }
+
+    func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+//        print(operation)
+//        if operation == .Push{
+//            return CustomAnimation(type: .push)
+//        }else{
+////            return CustomAnimation(type: .pop)
+//            return nil
+//        }
+        return CustomAnimation(type: operation == .Push ? .push : .pop)
+    }
+   
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        print(self.imageView)
+    }
+    
 }
+
+

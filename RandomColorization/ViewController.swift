@@ -48,19 +48,7 @@ class ViewController: UIViewController {
         
         
         //graditent color
-        gradientLayer.frame = view.bounds
-        let color1 = UIColor(white: 0.5, alpha: 0.2).CGColor as CGColorRef
-        let color2 = UIColor(red: 1.0, green: 0, blue: 0, alpha: 0.4).CGColor as CGColorRef
-        let color3 = UIColor(red: 0, green: 1, blue: 0, alpha: 0.3).CGColor as CGColorRef
-        let color4 = UIColor(red: 0, green: 0, blue: 1, alpha: 0.3).CGColor as CGColorRef
-        let color5 = UIColor(white: 0.4, alpha: 0.2).CGColor as CGColorRef
-        
-        gradientLayer.colors = [color1, color2, color3, color4, color5]
-        gradientLayer.locations = [0.10, 0.30, 0.50, 0.70, 0.90]
-        gradientLayer.startPoint = CGPointMake(0, 0)
-        gradientLayer.endPoint = CGPointMake(1, 1)
-        self.view.layer.addSublayer(gradientLayer)
-        
+  
     }
     
     func randomColor (){
