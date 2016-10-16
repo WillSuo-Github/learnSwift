@@ -74,6 +74,11 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
+		<key>slideOutMenu.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>18</integer>
+		</dict>
 		<key>snapChat.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -183,6 +188,11 @@
 			<true/>
 		</dict>
 		<key>546CE7551DB359C7000B13A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>546CE76D1DB35E84000B13A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
