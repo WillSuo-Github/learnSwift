@@ -94,6 +94,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>tabbarApp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>19</integer>
+		</dict>
 		<key>tableViewAnimation.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -193,6 +198,11 @@
 			<true/>
 		</dict>
 		<key>546CE76D1DB35E84000B13A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>546CE78D1DB36F98000B13A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
