@@ -39,6 +39,11 @@
 			<key>orderHint</key>
 			<integer>13</integer>
 		</dict>
+		<key>SwipeableCell.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
 		<key>VedioBackground.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -158,6 +163,26 @@
 			<true/>
 		</dict>
 		<key>545E62D21DADDB66007439D7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>546CE7231DB35998000B13A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>546CE7361DB35998000B13A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>546CE7411DB35998000B13A2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>546CE7551DB359C7000B13A2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
