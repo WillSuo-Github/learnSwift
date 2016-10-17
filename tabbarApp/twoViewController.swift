@@ -11,10 +11,22 @@ import UIKit
 
 class twoViewController: UIViewController {
 
+    var imageView: UIImageView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        imageView = UIImageView(image: UIImage(named: "Explore"))
+        imageView?.frame = view.bounds
+        view.addSubview(imageView!)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        imageView?.transform = CGAffineTransformMakeScale(0.5, 0.5)
+        UIView.animateWithDuration(1) { 
+            self.imageView?.transform = CGAffineTransformIdentity
+        }
     }
 
     override func didReceiveMemoryWarning() {

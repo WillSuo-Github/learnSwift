@@ -16,16 +16,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
         
         let tabBarVc = UITabBarController()
         let oneVc = oneViewController()
+        oneVc.tabBarItem = UITabBarItem(title: "123", image: UIImage(named: "Home"), selectedImage: UIImage(named: "Home"))
         let twoVc = twoViewController()
+        twoVc.tabBarItem = UITabBarItem(title: "123", image: UIImage(named: "Home"), selectedImage: UIImage(named: "Home"))
         let threeVc = threeViewController()
+        threeVc.tabBarItem = UITabBarItem(title: "123", image: UIImage(named: "Home"), selectedImage: UIImage(named: "Home"))
         tabBarVc.setViewControllers([oneVc, twoVc, threeVc], animated: true)
         
-        
+        window?.rootViewController = tabBarVc
+        window?.makeKeyAndVisible()
         
         return true
+    }
+    
+    func itemChick() {
+        
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {
