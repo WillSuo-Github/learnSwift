@@ -31,6 +31,7 @@ class ViewController: UIViewController {
             time.invalidate()
         }
         
+        
         isPlaying = false
         counter = 0.0
         timeLabel.text = String(format: "%.1f", counter)
