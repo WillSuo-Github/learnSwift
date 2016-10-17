@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var timeLabel: UILabel!
     var counter = 0.0
-    var Timer : NSTimer!
+    var timer : Timer!
     var isPlaying = false
 
     override func viewDidLoad() {
@@ -25,28 +25,32 @@ class ViewController: UIViewController {
     }
 
     
-    @IBAction func resetBtnChick(sender: AnyObject) {
+    @IBAction func resetBtnChick(_ sender: AnyObject) {
         
-        Timer.invalidate()
+        if let time = timer {
+            time.invalidate()
+        }
+        
         isPlaying = false
         counter = 0.0
         timeLabel.text = String(format: "%.1f", counter)
     }
     
-    @IBAction func startBtnChick(sender: AnyObject) {
+    @IBAction func startBtnChick(_ sender: AnyObject) {
         if isPlaying {
             return
         }
         isPlaying = true
-        Timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(ViewController.updateTime), userInfo: nil, repeats: true)
+//        Timer = Timer.scheduledTimerWithTimeInterval(0.1, target: self, selector: #selector(ViewController.updateTime), userInfo: nil, repeats: true)
+         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.updateTime), userInfo: nil, repeats: true)
         
     }
     
-    @IBAction func pauseBtnChick(sender: AnyObject) {
-        
+    @IBAction func pauseChick(_ sender: AnyObject) {
         isPlaying = false
-        Timer.invalidate()
+        timer.invalidate()
     }
+    
     
     func updateTime(){
         

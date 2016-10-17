@@ -2223,6 +2223,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WS.stopWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -2234,6 +2235,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WS.stopWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -2699,6 +2701,7 @@
 				546CE77F1DB35E85000B13A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		546CE79D1DB36F98000B13A2 /* Build configuration list for PBXNativeTarget "tabbarApp" */ = {
 			isa = XCConfigurationList;
@@ -2707,6 +2710,7 @@
 				546CE79F1DB36F98000B13A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		549664C21DAF6E57005F4967 /* Build configuration list for PBXNativeTarget "collectionViewAnimation" */ = {
 			isa = XCConfigurationList;
