@@ -19,10 +19,11 @@ class ViewController: UIViewController {
         let _: UIButton = {
            
             let btn: UIButton = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
-            btn.backgroundColor = .redColor()
+            btn.backgroundColor = .red
             view.addSubview(btn)
             
-            btn.addTarget(self, action: #selector(ViewController.btnDidChick), forControlEvents: .TouchUpInside)
+            btn.addTarget(self, action: #selector(ViewController.btnDidChick), for: .touchUpInside)
+            
             return btn
         }()
         
@@ -32,7 +33,7 @@ class ViewController: UIViewController {
         
         let tableVc = TableViewController()
         let nav = UINavigationController(rootViewController: tableVc)
-        presentViewController(nav, animated: true, completion: nil)
+        present(nav, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

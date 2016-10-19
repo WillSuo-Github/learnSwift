@@ -15,22 +15,21 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         view.addSubview(scrollView)
         
-        @IBOutlet weak var btnChick: UIButton!
         let leftVc = LeftViewController()
         let centerVc = CenterViewController()
         let rightVc = RightViewController()
         
         self.addChildViewController(leftVc)
         scrollView.addSubview(leftVc.view)
-        leftVc.didMoveToParentViewController(self)
+        leftVc.didMove(toParentViewController: self)
         
         self.addChildViewController(centerVc)
         scrollView.addSubview(centerVc.view)
-        centerVc.didMoveToParentViewController(self)
+        centerVc.didMove(toParentViewController: self)
         
         self.addChildViewController(rightVc)
         scrollView.addSubview(rightVc.view)
-        rightVc.didMoveToParentViewController(self)
+        rightVc.didMove(toParentViewController: self)
         
         var centerViewFrame = centerVc.view.frame
         centerViewFrame.origin.x = self.view.bounds.size.width
@@ -47,6 +46,7 @@ class ViewController: UIViewController {
         leftVc.touchBlock = {
             print("block回调")
             //两个方法必须同时调用
+            if weakRight == nil {return}
             weakRight!.view.removeFromSuperview()//删除视图
             weakRight!.removeFromParentViewController()//删除引用才会调用deinit
         }
@@ -59,8 +59,8 @@ class ViewController: UIViewController {
 
     lazy var scrollView: UIScrollView = {
         let t: UIScrollView = UIScrollView(frame: self.view.bounds)
-        t.backgroundColor = UIColor.purpleColor()
-        t.pagingEnabled = true
+        t.backgroundColor = UIColor.purple
+        t.isPagingEnabled = true
         return t
     }()
 

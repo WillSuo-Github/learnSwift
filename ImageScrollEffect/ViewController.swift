@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         
         setUpSubViews()
         
-        setZoomScaleFor(myScrollView.bounds.size)
+        setZoomScaleFor(srollViewSize: myScrollView.bounds.size)
         myScrollView.zoomScale = myScrollView.minimumZoomScale
         
         recenterImage()
@@ -35,22 +35,22 @@ class ViewController: UIViewController {
         bgImageView.frame = view.bounds
         view.addSubview(bgImageView)
         
-        let effect = UIBlurEffect(style: .Dark)
+        let effect = UIBlurEffect(style: .dark)
         let effectView = UIVisualEffectView(effect: effect)
         effectView.frame = bgImageView.bounds
         bgImageView.addSubview(effectView)
         
         myImageView = UIImageView(image: UIImage(named: "steve"))
         myScrollView = UIScrollView(frame: view.bounds)
-        myScrollView.backgroundColor = .clearColor()
+        myScrollView.backgroundColor = .clear
         myScrollView.contentSize = myImageView.bounds.size
         
         view.addSubview(myScrollView)
         myScrollView.addSubview(myImageView)
-        myScrollView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+        myScrollView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         btn = UIButton(frame: CGRect(x: 100, y: 100, width: 40, height: 40))
-        btn.backgroundColor = .redColor()
+        btn.backgroundColor = .red
         myScrollView.addSubview(btn)
         
         
@@ -63,7 +63,7 @@ class ViewController: UIViewController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        setZoomScaleFor(myScrollView.bounds.size)
+        setZoomScaleFor(srollViewSize: myScrollView.bounds.size)
         
         if myScrollView.zoomScale < myScrollView.minimumZoomScale {
             myScrollView.zoomScale = myScrollView.minimumZoomScale
@@ -82,7 +82,7 @@ class ViewController: UIViewController {
         
     }
     
-    private func recenterImage() {
+    fileprivate func recenterImage() {
         
         let scrollViewSize = myScrollView.bounds.size
         let imageViewSize = myImageView.frame.size
@@ -103,16 +103,16 @@ class ViewController: UIViewController {
 
 extension ViewController: UIScrollViewDelegate{
     
-    func viewForZoomingInScrollView(scrollView: UIScrollView) -> UIView? {
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return myImageView
     }
     
-    func scrollViewWillBeginZooming(scrollView: UIScrollView, withView view: UIView?) {
+    func scrollViewWillBeginZooming(_ scrollView: UIScrollView, with view: UIView?) {
         print(view)
     }
     
     
-    func scrollViewDidZoom(scrollView: UIScrollView) {
+    func scrollViewDidZoom(_ scrollView: UIScrollView) {
         recenterImage()
     }
 }

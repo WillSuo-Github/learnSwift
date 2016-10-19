@@ -22,7 +22,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         sourceData = oldEmoji
         
-        refreshControl.addTarget(self, action: #selector(self.refreshData), forControlEvents: .ValueChanged)
+        refreshControl.addTarget(self, action: #selector(self.refreshData), for: .valueChanged)
+        
         
         view.addSubview(tableVc.tableView)
         tableVc.refreshControl = refreshControl
@@ -50,18 +51,23 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource{
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sourceData.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell")
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         if cell == nil {
-            cell = UITableViewCell(style: .Default, reuseIdentifier: "cell")
+            cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
         }
         cell?.textLabel?.text = sourceData[indexPath.row]
         return cell!
     }
+    
+    
+    
+    
 }
 
 

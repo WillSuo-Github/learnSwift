@@ -15,14 +15,15 @@ class LeftViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor.redColor()
+        view.backgroundColor = .red
     }
     
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         print(1111)
         touchBlock()
     }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

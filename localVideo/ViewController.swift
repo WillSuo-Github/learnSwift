@@ -30,38 +30,40 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view, typically from a nib.
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.registerNib(UINib.init(nibName: "WSCell", bundle: nil), forCellReuseIdentifier: "cell")
+        tableView.register(UINib(nibName: "WSCell", bundle: nil), forCellReuseIdentifier: "cell")
         view.addSubview(tableView)
     }
     
     func playBtnChick(sender: UIButton){
         
-        let path = NSBundle.mainBundle().pathForResource("emoji zone", ofType: "mp4")
+        let path = Bundle.main.path(forResource: "emoji zone", ofType: "mp4")
         
-        playView = AVPlayer(URL: NSURL(fileURLWithPath: path!))
+        playView = AVPlayer(url: URL(fileURLWithPath: path!))
         playViewController.player = playView
-        self.presentViewController(playViewController, animated: true) { 
+        self.present(playViewController, animated: true) {
             self.playViewController.player?.play()
         }
-    }
-
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+        
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell") as! WSCell
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data.count
+    }
+
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! WSCell
         
         cell.videoScreenShort.image = UIImage(named: data[indexPath.row].image)
         cell.titleLabel.text = data[indexPath.row].title
         cell.sourceLabel.text = data[indexPath.row].source
         cell.playBtn.tag = indexPath.row
-        cell.playBtn.addTarget(self, action: #selector(ViewController.playBtnChick(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        cell.playBtn.addTarget(self, action: #selector(ViewController.playBtnChick(sender:)), for: .touchUpInside)
         
         return cell
     }
-    
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 220
     }
 
@@ -69,7 +71,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     lazy var tableView :UITableView = {
        
         let t = UITableView(frame: self.view.frame)
-        t.backgroundColor = UIColor.redColor()
+        t.backgroundColor = .red
         return t
     }()
 }

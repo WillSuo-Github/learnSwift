@@ -14,15 +14,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-    @IBAction func btnAction(sender: AnyObject) {
+    @IBAction func btnAction(_ sender: AnyObject) {
         
         let loginVc = LoginViewController()
         loginVc.isShowAnimation = true
-        loginVc.modalTransitionStyle = .CoverVertical
-        loginVc.modalPresentationStyle = .FullScreen
+        loginVc.modalTransitionStyle = .coverVertical
+        loginVc.modalPresentationStyle = .fullScreen
 //        self.modalTransitionStyle = .CrossDissolve
 //        self.modalPresentationStyle = .FullScreen
-        presentViewController(loginVc, animated: true, completion: nil)
+        present(loginVc, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

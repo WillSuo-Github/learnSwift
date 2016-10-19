@@ -13,11 +13,11 @@ class RightViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor.blueColor()
+        view.backgroundColor = UIColor.blue
         
         let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
-        button.backgroundColor = UIColor.redColor()
-        button .addTarget(self, action: #selector(RightViewController.buttonChick), forControlEvents: UIControlEvents.TouchUpInside)
+        button.backgroundColor = UIColor.red
+        button.addTarget(self, action: #selector(RightViewController.buttonChick), for: .touchUpInside)
         view.addSubview(button)
     }
     
@@ -30,7 +30,7 @@ class RightViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         print("right touch begin")
     }
 

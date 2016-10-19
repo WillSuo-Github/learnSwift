@@ -13,7 +13,7 @@ class CenterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.greenColor() 
+        view.backgroundColor = UIColor.green
     }
 
     override func didReceiveMemoryWarning() {

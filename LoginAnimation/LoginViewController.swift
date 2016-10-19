@@ -19,10 +19,10 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        view.backgroundColor = .blueColor()
+        view.backgroundColor = .blue
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         AccountCenterX.constant = -500
@@ -31,20 +31,20 @@ class LoginViewController: UIViewController {
     }
     
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         if isShowAnimation {
-            UIView.animateWithDuration(0.5, delay: 0, options: .CurveEaseIn, animations: {
+            UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseIn, animations: {
                 self.AccountCenterX.constant = 0
                 self.view.layoutIfNeeded()
                 }, completion: nil)
             
-            UIView.animateWithDuration(0.5, delay: 0.2, options: .CurveEaseIn, animations: {
+            UIView.animate(withDuration: 0.5, delay: 0.2, options: .curveEaseIn, animations: {
                 self.PwdCenterX.constant = 0
                 self.view.layoutIfNeeded()
                 }, completion: nil)
             
-            UIView.animateWithDuration(0.5, delay: 0.4, options: .CurveEaseIn, animations: {
+            UIView.animate(withDuration: 0.5, delay: 0.4, options: .curveEaseIn, animations: {
                 self.LoginBtnCenterX.constant = 0
                 self.view.layoutIfNeeded()
                 }, completion: nil)

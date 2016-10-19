@@ -20,7 +20,7 @@ class TableViewController: UIViewController {
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.tableFooterView = UIView(frame: CGRectZero)
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
         
         
     }
@@ -30,7 +30,7 @@ class TableViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         self.tableView.reloadData()
@@ -38,11 +38,11 @@ class TableViewController: UIViewController {
         let cellArr = tableView.visibleCells
        
         
-        for (index, c) in cellArr.enumerate() {
+        for (index, c) in cellArr.enumerated() {
             let cell: UITableViewCell = c as UITableViewCell
-            cell.transform = CGAffineTransformMakeTranslation(0, tableView.bounds.size.height)
-            UIView.animateWithDuration(2, delay: 0.05 * Double(index), usingSpringWithDamping: 0.6, initialSpringVelocity: 2, options: .CurveEaseIn, animations: { 
-                cell.transform = CGAffineTransformIdentity
+            cell.transform = CGAffineTransform(translationX: 0, y: tableView.bounds.size.height)
+            UIView.animate(withDuration: 2, delay: 0.05 * Double(index), usingSpringWithDamping: 0.6, initialSpringVelocity: 2, options: .curveEaseIn, animations: { 
+                cell.transform = CGAffineTransform.identity
                 }, completion: nil)
         }
         
@@ -55,31 +55,30 @@ class TableViewController: UIViewController {
 
 extension TableViewController: UITableViewDelegate, UITableViewDataSource {
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableData.count
     }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell")
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         if cell == nil {
-            cell = UITableViewCell(style: .Default, reuseIdentifier: "cell")
+            cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
         }
-        cell?.backgroundColor = .redColor()
+        cell?.backgroundColor = .red
         cell?.textLabel?.text = tableData[indexPath.row]
         return cell!
     }
     
-    func colorforIndex(index: Int) -> UIColor {
+    
+    func colorforIndex(_ index: Int) -> UIColor {
         
         let itemCount = tableData.count - 1
         let color = (CGFloat(index) / CGFloat(itemCount)) * 0.6
         return UIColor(red: color, green: 0.0, blue: 1.0, alpha: 1.0)
         
     }
-    
-     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        
+
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.backgroundColor =  colorforIndex(indexPath.row)
-        
     }
 }

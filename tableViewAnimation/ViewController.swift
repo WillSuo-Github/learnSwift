@@ -11,10 +11,11 @@ import UIKit
 class ViewController: UIViewController {
 
     
-    @IBAction func btnChick(sender: AnyObject) {
+    @IBAction func btnChick(_ sender: AnyObject) {
         
         let tableVc = TableViewController()
-        presentViewController(tableVc, animated: false, completion: nil)
+
+        present(tableVc, animated: false, completion: nil)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

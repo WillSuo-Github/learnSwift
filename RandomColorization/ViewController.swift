@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     
     var audioPlayer = AVAudioPlayer()
     var gradientLayer = CAGradientLayer()
-    var timer: NSTimer?
+    var timer: Timer?
     
 
     override func viewDidLoad() {
@@ -25,15 +25,15 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @IBAction func playBtnChick(sender: AnyObject) {
+    @IBAction func playBtnChick(_ sender: AnyObject) {
         
         
         do{
-            let musicUrl = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("Ecstasy", ofType: "mp3")!)
             
+            let musicUrl = URL(fileURLWithPath: Bundle.main.path(forResource: "Ecstasy", ofType: "mp3")!)
             try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
             try AVAudioSession.sharedInstance().setActive(true)
-            try audioPlayer = AVAudioPlayer(contentsOfURL: musicUrl)
+            try audioPlayer = AVAudioPlayer(contentsOf: musicUrl)
             audioPlayer.prepareToPlay()
             audioPlayer.play()
             
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         }
         
         if timer == nil {
-            timer = NSTimer.scheduledTimerWithTimeInterval(0.2, target: self, selector: #selector(ViewController.randomColor), userInfo: nil, repeats: true)
+            timer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(ViewController.randomColor), userInfo: nil, repeats: true)
         }
         
         

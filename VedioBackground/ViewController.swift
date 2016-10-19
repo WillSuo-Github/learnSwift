@@ -13,9 +13,9 @@ class ViewController: VideoSplashViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let url = NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("moments", ofType: "mp4")!)
+        let url = URL(fileURLWithPath: Bundle.main.path(forResource: "moments", ofType: "mp4")!)
         
-        contentUrl = url
+        contentUrl = url as NSURL
     }
 
     override func didReceiveMemoryWarning() {

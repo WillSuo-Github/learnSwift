@@ -16,29 +16,29 @@ class VideoSplashViewController: UIViewController {
     public var contentUrl: NSURL = NSURL(){
         didSet{
             
-            setMoviePlayer(contentUrl)
+            setMoviePlayer(url: contentUrl)
         }
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        NSNotificationCenter.defaultCenter().addObserver(self,
+        NotificationCenter.default.addObserver(self,
                                                          selector: #selector(VideoSplashViewController.playerItemDidReachEnd),
-        name: AVPlayerItemDidPlayToEndTimeNotification,
+        name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
         object: moviePlayer.player?.currentItem)
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
         moviePlayer.view.frame = view.bounds
         moviePlayer.showsPlaybackControls = false
         view.addSubview(moviePlayer.view)
-        view.sendSubviewToBack(moviePlayer.view)
+        view.sendSubview(toBack: moviePlayer.view)
     }
     
     private func setMoviePlayer(url: NSURL) {
-        self.moviePlayer.player = AVPlayer(URL: url)
+        self.moviePlayer.player = AVPlayer(url: url as URL)
         self.moviePlayer.player?.play()
     }
 
@@ -49,7 +49,7 @@ class VideoSplashViewController: UIViewController {
     
     func playerItemDidReachEnd() {
         
-        moviePlayer.player?.seekToTime(kCMTimeZero)
+        moviePlayer.player?.seek(to: kCMTimeZero)
         moviePlayer.player?.play()
     }
     

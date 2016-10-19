@@ -9,18 +9,18 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder {
 
     var window: UIWindow?
     var mask: CALayer?
     var imageView: UIImageView?
     
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    private func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
         
-        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = UIViewController()
         
         let imageView = UIImageView(frame: self.window!.frame)
@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         self.mask = CALayer()
-        self.mask!.contents = UIImage(named: "twitter")?.CGImage
+        self.mask!.contents = UIImage(named: "twitter")?.cgImage
         self.mask!.contentsGravity = kCAGravityResizeAspect
         self.mask!.bounds = CGRect(x: 0, y: 0, width: 100, height: 81)
         self.mask!.anchorPoint = CGPoint(x: 0.5, y: 0.5)
@@ -41,31 +41,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window!.backgroundColor = UIColor(red:0.117, green:0.631, blue:0.949, alpha:1)
         self.window!.makeKeyAndVisible()
-        UIApplication.sharedApplication().statusBarHidden = true
+//        UIApplication.shared.statusBarHidden = true
+        
         return true
 
     }
     
-    
-    func animateMask() {
-        
-        let keyFrameAnimation = CAKeyframeAnimation(keyPath: "bounds")
-        keyFrameAnimation.delegate = self
-        keyFrameAnimation.duration = 0.6
-        keyFrameAnimation.beginTime = CACurrentMediaTime() + 0.5
-        keyFrameAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut), CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)]
-        let initalBounds = NSValue(CGRect: mask!.bounds)
-        let secondBounds = NSValue(CGRect: CGRect(x: 0, y: 0, width: 90, height: 73))
-        let finalBounds = NSValue(CGRect: CGRect(x: 0, y: 0, width: 1600, height: 1300))
-        keyFrameAnimation.values = [initalBounds, secondBounds, finalBounds]
-        keyFrameAnimation.keyTimes = [0, 0.3, 1]
-        self.mask!.addAnimation(keyFrameAnimation, forKey: "bounds")
-        
+    var prefersStatusBarHidden: Bool {
+        return true
     }
     
-    override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
-        self.imageView!.layer.mask = nil
-    }
+    //swift 3.0  之后好像 appdelegate 不能作为某个的delegate了 （暂不确定 尴尬。。。）
+    
+    
+//    func animateMask() {
+//        
+//        let keyFrameAnimation = CAKeyframeAnimation(keyPath: "bounds")
+//        keyFrameAnimation.delegate = self
+//        keyFrameAnimation.duration = 0.6
+//        keyFrameAnimation.beginTime = CACurrentMediaTime() + 0.5
+//        keyFrameAnimation.timingFunctions = [CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut), CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)]
+//        let initalBounds = NSValue(cgRect: mask!.bounds)
+//        let secondBounds = NSValue(cgRect: CGRect(x: 0, y: 0, width: 90, height: 73))
+//        let finalBounds = NSValue(cgRect: CGRect(x: 0, y: 0, width: 1600, height: 1300))
+//        keyFrameAnimation.values = [initalBounds, secondBounds, finalBounds]
+//        keyFrameAnimation.keyTimes = [0, 0.3, 1]
+//        self.mask!.add(keyFrameAnimation, forKey: "bounds")
+//        
+//    }
+//    
+//    override func animationDidStop(anim: CAAnimation, finished flag: Bool) {
+//        self.imageView!.layer.mask = nil
+//    }
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -90,5 +97,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
 
+}
+
+extension AppDelegate: UIApplicationDelegate {
+    
+    
 }
 

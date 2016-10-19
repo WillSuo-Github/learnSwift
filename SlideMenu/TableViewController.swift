@@ -23,7 +23,7 @@ class TableViewController: UIViewController {
     private func configSubViews(){
         
         
-        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .Done, target: self, action: #selector(TableViewController.menuBtnChick))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu"), style: .done, target: self, action: #selector(TableViewController.menuBtnChick))
         
         tableView = {
             
@@ -44,12 +44,12 @@ class TableViewController: UIViewController {
 }
 
 extension TableViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
     }
     
