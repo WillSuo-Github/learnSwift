@@ -14,13 +14,13 @@ class MenuTableViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor.purpleColor()
+        view.backgroundColor = UIColor.purple
         let _: UITableView = {
             
             let t: UITableView = UITableView(frame: view.bounds)
             t.delegate = self
             t.dataSource = self
-            t.tableFooterView = UIView(frame: CGRectZero)
+            t.tableFooterView = UIView(frame: CGRect.zero)
             view.addSubview(t)
             return t
         }()
@@ -34,31 +34,32 @@ class MenuTableViewController: UIViewController {
 
 extension MenuTableViewController: UITableViewDelegate, UITableViewDataSource {
     
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    private func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
     }
     
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("Cell")
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         
         if cell == nil {
-            cell = UITableViewCell(style: .Default, reuseIdentifier: "Cell")
+            cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
         }
         
-        cell!.backgroundColor = UIColor.clearColor()
+        cell!.backgroundColor = UIColor.clear
         
         cell!.textLabel?.text = "1"
-        cell?.backgroundColor = .redColor()
+        cell?.backgroundColor = .red
         
         return cell!
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        navigationController?.popViewControllerAnimated(true)
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        navigationController!.popViewController(animated: true)
     }
 }

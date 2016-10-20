@@ -13,22 +13,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+        window = UIWindow(frame: UIScreen.main.bounds)
         let backVc = BackTableVC()
         let fontVc = ViewController()
         
         let swrevealVc = SWRevealViewController(rearViewController: backVc, frontViewController: fontVc)
-        swrevealVc.delegate = self
-        swrevealVc.toggleAnimationType = .EaseOut
-        swrevealVc.frontViewPosition = .LeftSideMost
+        swrevealVc?.delegate = self
+        swrevealVc?.toggleAnimationType = .easeOut
+        swrevealVc?.frontViewPosition = .leftSideMost
         
         window?.rootViewController = swrevealVc
         window?.makeKeyAndVisible()
         return true
     }
+
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

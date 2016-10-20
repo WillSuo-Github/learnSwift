@@ -53,28 +53,28 @@ extension TableViewController: UITableViewDelegate, UITableViewDataSource {
         return 4
     }
     
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("Cell")
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        var cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         
         if cell == nil {
-            cell = UITableViewCell(style: .Default, reuseIdentifier: "Cell")
+            cell = UITableViewCell(style: .default, reuseIdentifier: "Cell")
         }
         
-        cell!.backgroundColor = UIColor.clearColor()
+        cell!.backgroundColor = UIColor.clear
         
         cell!.textLabel?.text = "123"
         
         return cell!
     }
+
 }
 
 extension TableViewController: UINavigationControllerDelegate {
     
-    func navigationController(navigationController: UINavigationController, animationControllerForOperation operation: UINavigationControllerOperation, fromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        
-        if operation == .Push {
-           transitionManager.isPush = true
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        if operation == .push {
+            transitionManager.isPush = true
         }else{
             transitionManager.isPush = false
         }

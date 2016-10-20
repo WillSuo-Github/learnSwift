@@ -29,72 +29,71 @@ class CustomAnimation: NSObject, UIViewControllerAnimatedTransitioning {
         self.type = type
     }
     
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
-        
+    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.5
     }
     
-    func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
+    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         let t = type as NavTransitionType
         switch t {
         case .push:
-            doPushAnimation(transitionContext)
+            doPushAnimation(context: transitionContext)
         case .pop:
-            doPopAnimation(transitionContext)
+            doPopAnimation(context: transitionContext)
             
         }
     }
     
     private func doPushAnimation(context: UIViewControllerContextTransitioning) {
-        let fromVc: ViewController = context.viewControllerForKey(UITransitionContextFromViewControllerKey) as! ViewController
-        let toVc = context.viewControllerForKey(UITransitionContextToViewControllerKey) as! WSViewController
-        let cell = fromVc.myCollectionView?.cellForItemAtIndexPath(fromVc.currentIndex!) as! AnimationCollectionViewCell
-        let tmpImageView = cell.animationImageView.snapshotViewAfterScreenUpdates(false)
-        let containerView = context.containerView()
-        tmpImageView.frame = cell.animationImageView.convertRect(cell.animationImageView.bounds, toView: containerView)
-        print(cell.animationImageView.convertRect(cell.animationImageView.bounds, toView: containerView))
-        cell.animationImageView.hidden = true
+        let fromVc: ViewController = context.viewController(forKey: UITransitionContextViewControllerKey.from) as! ViewController
+        let toVc = context.viewController(forKey: UITransitionContextViewControllerKey.to) as! WSViewController
+        let cell = fromVc.myCollectionView?.cellForItem(at: fromVc.currentIndex!) as! AnimationCollectionViewCell
+        let tmpImageView = cell.animationImageView.snapshotView(afterScreenUpdates: false)
+        let containerView = context.containerView
+        tmpImageView?.frame = cell.animationImageView.convert(cell.animationImageView.bounds, to: containerView)
+        print(cell.animationImageView.convert(cell.animationImageView.bounds, to: containerView))
+        cell.animationImageView.isHidden = true
         toVc.view.alpha = 0
-        toVc.imageView.hidden = true
-        containerView?.addSubview(toVc.view)
-        containerView?.addSubview(tmpImageView)
+        toVc.imageView.isHidden = true
+        containerView.addSubview(toVc.view)
+        containerView.addSubview(tmpImageView!)
         
         
-        UIView.animateWithDuration(transitionDuration(context), animations: { 
-            print( toVc.imageView.convertRect(toVc.imageView.bounds, toView: containerView))
-            tmpImageView.frame = toVc.imageView.convertRect(toVc.imageView.bounds, toView: containerView)
+        UIView.animate(withDuration: transitionDuration(using: context), animations: { 
+            print( toVc.imageView.convert(toVc.imageView.bounds, to: containerView))
+            tmpImageView?.frame = toVc.imageView.convert(toVc.imageView.bounds, to: containerView)
             toVc.view.alpha = 1
             
             
             }) { (finished) in
-               toVc.imageView.hidden = false
-                tmpImageView.removeFromSuperview()
+               toVc.imageView.isHidden = false
+                tmpImageView?.removeFromSuperview()
                 context.completeTransition(true)
         }
     }
     
     private func doPopAnimation(context: UIViewControllerContextTransitioning) {
         
-        let toVc: ViewController = context.viewControllerForKey(UITransitionContextToViewControllerKey) as! ViewController
-        let fromVc = context.viewControllerForKey(UITransitionContextFromViewControllerKey) as! WSViewController
-        let cell = toVc.myCollectionView?.cellForItemAtIndexPath(toVc.currentIndex!) as! AnimationCollectionViewCell
-        let tmpImageView = fromVc.imageView.snapshotViewAfterScreenUpdates(false)
-        let containerView = context.containerView()
-        tmpImageView.frame = fromVc.imageView.frame
-        cell.animationImageView.hidden = true
+        let toVc: ViewController = context.viewController(forKey: UITransitionContextViewControllerKey.to) as! ViewController
+        let fromVc = context.viewController(forKey: UITransitionContextViewControllerKey.from) as! WSViewController
+        let cell = toVc.myCollectionView?.cellForItem(at: toVc.currentIndex!) as! AnimationCollectionViewCell
+        let tmpImageView = fromVc.imageView.snapshotView(afterScreenUpdates: false)
+        let containerView = context.containerView
+        tmpImageView?.frame = fromVc.imageView.frame
+        cell.animationImageView.isHidden = true
         toVc.view.alpha = 0
-        cell.animationImageView.hidden = true
-        containerView?.addSubview(toVc.view)
-        containerView?.addSubview(tmpImageView)
+        cell.animationImageView.isHidden = true
+        containerView.addSubview(toVc.view)
+        containerView.addSubview(tmpImageView!)
         
-        UIView.animateWithDuration(transitionDuration(context), animations: { 
+        UIView.animate(withDuration: transitionDuration(using: context), animations: { 
             
-            tmpImageView.frame = cell.animationImageView.convertRect(cell.animationImageView.bounds, toView: containerView)
+            tmpImageView?.frame = cell.animationImageView.convert(cell.animationImageView.bounds, to: containerView)
             toVc.view.alpha = 1
             })
         { (finished) in
-            tmpImageView.removeFromSuperview()
-            cell.animationImageView.hidden = false
+            tmpImageView?.removeFromSuperview()
+            cell.animationImageView.isHidden = false
             context.completeTransition(true)
         }
     }

@@ -20,12 +20,10 @@ class twoViewController: UIViewController {
         view.addSubview(imageView!)
     }
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        imageView?.transform = CGAffineTransformMakeScale(0.5, 0.5)
-        UIView.animateWithDuration(1) { 
-            self.imageView?.transform = CGAffineTransformIdentity
+    override func viewDidAppear(_ animated: Bool) {
+        imageView?.transform = CGAffineTransform(scaleX: 0.5, y: 0.5)
+        UIView.animate(withDuration: 1.0) {
+            self.imageView?.transform = CGAffineTransform.identity
         }
     }
 

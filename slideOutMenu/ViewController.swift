@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        view.backgroundColor = .redColor()
+        view.backgroundColor = .red
         view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
     

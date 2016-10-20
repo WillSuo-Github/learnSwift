@@ -18,19 +18,19 @@ class AnimationCollectionViewCell: UICollectionViewCell {
     
     func prepareCell(viewModel: AnimationCellModel) {
         animationImageView.image = UIImage(named: viewModel.imagePath)
-        animationTextView.scrollEnabled = false
-        backButton.hidden = true
+        animationTextView.isScrollEnabled = false
+        backButton.isHidden = true
         addTapEventHandler()
     }
     
     func handleCellSelected() {
-        animationTextView.scrollEnabled = false
-        backButton.hidden = false
-        self.superview?.bringSubviewToFront(self)
+        animationTextView.isScrollEnabled = false
+        backButton.isHidden = false
+        self.superview?.bringSubview(toFront: self)
     }
     
     private func addTapEventHandler() {
-        backButton.addTarget(self, action: Selector("backButtonDidTouch:"), forControlEvents: .TouchUpInside)
+        backButton.addTarget(self, action: Selector(("backButtonDidTouch:")), for: .touchUpInside)
     }
     
     func backButtonDidTouch(sender: UIGestureRecognizer) {

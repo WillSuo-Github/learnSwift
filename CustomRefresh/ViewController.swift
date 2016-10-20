@@ -29,8 +29,8 @@ class ViewController: UIViewController {
         
         customRefresh = {
             let t: UIRefreshControl = UIRefreshControl()
-            t.tintColor = .clearColor()
-            t.backgroundColor = .clearColor()
+            t.tintColor = .clear
+            t.backgroundColor = .clear
             tableView.addSubview(t)
             return t
         }()
@@ -39,8 +39,8 @@ class ViewController: UIViewController {
     }
     
     private func configRefreshContentView() {
-        let refreshContents = NSBundle.mainBundle().loadNibNamed("contentView", owner: self, options: nil)
-        let contentView = refreshContents[0] as! UIView
+        let refreshContents = Bundle.main.loadNibNamed("contentView", owner: self, options: nil)
+        let contentView = refreshContents?[0] as! UIView
         contentView.frame = customRefresh.bounds
         customRefresh.addSubview(contentView)
         for i in 0..<contentView.subviews.count {
@@ -48,17 +48,17 @@ class ViewController: UIViewController {
         }
     }
     
-    private func refreshStartAnimation() {
+    fileprivate func refreshStartAnimation() {
         
         
-        UIView.animateWithDuration(0.5, animations: { 
-            self.labelArr[self.index].transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
-            self.labelArr[self.index].textColor = .redColor()
+        UIView.animate(withDuration: 0.5, animations: { 
+            self.labelArr[self.index].transform = CGAffineTransform(rotationAngle: CGFloat(M_PI_4))
+            self.labelArr[self.index].textColor = .red
             }) { (finished) in
                 
-                UIView.animateWithDuration(0.5, animations: { 
-                    self.labelArr[self.index].transform = CGAffineTransformIdentity
-                    self.labelArr[self.index].textColor = .blackColor()
+                UIView.animate(withDuration: 0.5, animations: { 
+                    self.labelArr[self.index].transform = CGAffineTransform.identity
+                    self.labelArr[self.index].textColor = .black
                     }, completion: { (finished) in
                         self.index += 1
                         if self.index < self.labelArr.count {
@@ -72,24 +72,25 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell")
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         if cell == nil {
-            cell = UITableViewCell(style: .Default, reuseIdentifier: "cell")
+            cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
         }
         cell?.textLabel?.text = "1231231"
         return cell!
     }
     
-    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-        if customRefresh.refreshing {
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if customRefresh.isRefreshing {
             refreshStartAnimation()
         }
-        
     }
 }
 

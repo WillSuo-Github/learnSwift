@@ -13,7 +13,7 @@ class OneViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = UIColor.brownColor()
+        view.backgroundColor = UIColor.brown
         view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
     }
 

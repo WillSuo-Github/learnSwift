@@ -20,25 +20,27 @@ class oneViewController: UIViewController {
         view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.tableFooterView = UIView(frame: CGRectZero)
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
         
     }
-
-    override func viewDidAppear(animated: Bool) {
+    
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         let cells = tableView.visibleCells
         for cell in cells {
-            cell.transform = CGAffineTransformMakeTranslation(0, tableView.bounds.size.height)
+            cell.transform = CGAffineTransform(translationX: 0, y: tableView.bounds.size.height)
         }
         
-        for (index, cell) in cells.enumerate() {
-            UIView.animateWithDuration(1 + (Double(index) / 2), animations: {
-                cell.transform = CGAffineTransformIdentity
+        for (index, cell) in cells.enumerated() {
+            UIView.animate(withDuration: 1 + (Double(index) / 2), animations: {
+                cell.transform = CGAffineTransform.identity
                 
             })
         }
     }
+    
+
+
     
 
     /*
@@ -55,19 +57,24 @@ class oneViewController: UIViewController {
 
 extension oneViewController: UITableViewDelegate, UITableViewDataSource {
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableData.count
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+         return tableData.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell")
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         if cell == nil {
-            cell = UITableViewCell(style: .Default, reuseIdentifier: "cell")
+            cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
         }
-        cell?.backgroundColor = .redColor()
+        cell?.backgroundColor = .red
         cell?.textLabel?.text = tableData[indexPath.row]
         return cell!
     }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor =  colorforIndex(index: indexPath.row)
+    }
+
     
     func colorforIndex(index: Int) -> UIColor {
         
@@ -77,11 +84,6 @@ extension oneViewController: UITableViewDelegate, UITableViewDataSource {
         
     }
     
-    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        
-        cell.backgroundColor =  colorforIndex(indexPath.row)
-        
-    }
 }
 
 

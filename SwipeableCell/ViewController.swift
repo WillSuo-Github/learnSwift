@@ -29,7 +29,7 @@ class ViewController: UIViewController {
             let table = UITableView(frame: view.bounds)
             table.delegate = self
             table.dataSource = self
-            table.tableFooterView = UIView(frame: CGRectZero)
+            table.tableFooterView = UIView(frame: CGRect.zero)
             view.addSubview(table)
             return table
         }()
@@ -38,14 +38,14 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCellWithIdentifier("cell")
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCell(withIdentifier: "cell")
         if cell == nil {
-            cell = UITableViewCell(style: .Default, reuseIdentifier: "cell")
+            cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
         }
         cell?.imageView?.image = UIImage(named: data[indexPath.row].image)
         cell?.textLabel?.text = data[indexPath.row].name
@@ -53,17 +53,18 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell!
     }
     
-    
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
     
-    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
-        let delegateAction = UITableViewRowAction(style: .Default, title: "删除") { (action: UITableViewRowAction, indexPath: NSIndexPath) in
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let delegateAction = UITableViewRowAction(style: .default, title: "删除") { (action, indexPath) in
             print(action, indexPath)
         }
         
         return [delegateAction]
     }
+    
+
 }
 
